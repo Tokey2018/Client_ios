@@ -1,0 +1,881 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17523E2A21D1F7E70066C82A /* MainTouchTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17523E2921D1F7E70066C82A /* MainTouchTableView.m */; };
+		17523E2D21D1F8480066C82A /* MainTouchScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17523E2C21D1F8480066C82A /* MainTouchScrollView.m */; };
+		17523E3521D1FBF80066C82A /* TokeyViewTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 17523E3421D1FBF80066C82A /* TokeyViewTools.m */; };
+		17523E3B21D1FE060066C82A /* TKChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17523E3921D1FE060066C82A /* TKChatListViewController.m */; };
+		17523E3C21D1FE060066C82A /* TKChatListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17523E3A21D1FE060066C82A /* TKChatListViewController.xib */; };
+		17523E4121D1FE800066C82A /* TKContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17523E3F21D1FE800066C82A /* TKContactsViewController.m */; };
+		17523E4221D1FE800066C82A /* TKContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17523E4021D1FE800066C82A /* TKContactsViewController.xib */; };
+		17C853FE21D1E0D00007E864 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C853FD21D1E0D00007E864 /* AppDelegate.m */; };
+		17C8540421D1E0D00007E864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C8540221D1E0D00007E864 /* Main.storyboard */; };
+		17C8540621D1E0D20007E864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C8540521D1E0D20007E864 /* Assets.xcassets */; };
+		17C8540921D1E0D20007E864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C8540721D1E0D20007E864 /* LaunchScreen.storyboard */; };
+		17C8540C21D1E0D20007E864 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C8540B21D1E0D20007E864 /* main.m */; };
+		17C8541621D1E0D20007E864 /* tokeys_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C8541521D1E0D20007E864 /* tokeys_iOSTests.m */; };
+		17C8542121D1E0D20007E864 /* tokeys_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C8542021D1E0D20007E864 /* tokeys_iOSUITests.m */; };
+		17C8543521D1F0890007E864 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C8543421D1F0890007E864 /* HomeViewController.m */; };
+		17C8543821D1F0C40007E864 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C8543721D1F0C40007E864 /* MainViewController.m */; };
+		17C8543C21D1F0DB0007E864 /* TKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C8543B21D1F0DB0007E864 /* TKBaseViewController.m */; };
+		38DD62CC033636A40F3B176F /* libPods-tokeys-iOSUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2048611566E7C8AA0D24F7 /* libPods-tokeys-iOSUITests.a */; };
+		4D9202E99ABF91037FC8C85A /* libPods-tokeys-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6027EF55720A50F2636E9115 /* libPods-tokeys-iOS.a */; };
+		F96FBD06DCCE569D87ACBC3B /* libPods-tokeys-iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C19DE34743CF3B2005C7D85 /* libPods-tokeys-iOSTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17C8541221D1E0D20007E864 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17C853F121D1E0D00007E864 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17C853F821D1E0D00007E864;
+			remoteInfo = "tokeys-iOS";
+		};
+		17C8541D21D1E0D20007E864 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17C853F121D1E0D00007E864 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17C853F821D1E0D00007E864;
+			remoteInfo = "tokeys-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AB9C1F9743648951FDF1C3C /* Pods-tokeys-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tokeys-iOS.release.xcconfig"; path = "Target Support Files/Pods-tokeys-iOS/Pods-tokeys-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		17523E2821D1F7E70066C82A /* MainTouchTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTouchTableView.h; sourceTree = "<group>"; };
+		17523E2921D1F7E70066C82A /* MainTouchTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTouchTableView.m; sourceTree = "<group>"; };
+		17523E2B21D1F8480066C82A /* MainTouchScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTouchScrollView.h; sourceTree = "<group>"; };
+		17523E2C21D1F8480066C82A /* MainTouchScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTouchScrollView.m; sourceTree = "<group>"; };
+		17523E2E21D1FA4D0066C82A /* tokeys.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tokeys.pch; sourceTree = "<group>"; };
+		17523E3021D1FABD0066C82A /* TKMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKMacros.h; sourceTree = "<group>"; };
+		17523E3321D1FBF80066C82A /* TokeyViewTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TokeyViewTools.h; sourceTree = "<group>"; };
+		17523E3421D1FBF80066C82A /* TokeyViewTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TokeyViewTools.m; sourceTree = "<group>"; };
+		17523E3821D1FE060066C82A /* TKChatListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKChatListViewController.h; sourceTree = "<group>"; };
+		17523E3921D1FE060066C82A /* TKChatListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKChatListViewController.m; sourceTree = "<group>"; };
+		17523E3A21D1FE060066C82A /* TKChatListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKChatListViewController.xib; sourceTree = "<group>"; };
+		17523E3E21D1FE800066C82A /* TKContactsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKContactsViewController.h; sourceTree = "<group>"; };
+		17523E3F21D1FE800066C82A /* TKContactsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKContactsViewController.m; sourceTree = "<group>"; };
+		17523E4021D1FE800066C82A /* TKContactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKContactsViewController.xib; sourceTree = "<group>"; };
+		17C853F921D1E0D00007E864 /* tokeys-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tokeys-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17C853FC21D1E0D00007E864 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		17C853FD21D1E0D00007E864 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		17C8540321D1E0D00007E864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17C8540521D1E0D20007E864 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17C8540821D1E0D20007E864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		17C8540A21D1E0D20007E864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17C8540B21D1E0D20007E864 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17C8541121D1E0D20007E864 /* tokeys-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tokeys-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17C8541521D1E0D20007E864 /* tokeys_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tokeys_iOSTests.m; sourceTree = "<group>"; };
+		17C8541721D1E0D20007E864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17C8541C21D1E0D20007E864 /* tokeys-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tokeys-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17C8542021D1E0D20007E864 /* tokeys_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tokeys_iOSUITests.m; sourceTree = "<group>"; };
+		17C8542221D1E0D20007E864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17C8543321D1F0890007E864 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		17C8543421D1F0890007E864 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		17C8543621D1F0C40007E864 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		17C8543721D1F0C40007E864 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		17C8543A21D1F0DB0007E864 /* TKBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKBaseViewController.h; sourceTree = "<group>"; };
+		17C8543B21D1F0DB0007E864 /* TKBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKBaseViewController.m; sourceTree = "<group>"; };
+		3C19DE34743CF3B2005C7D85 /* libPods-tokeys-iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tokeys-iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4206CA234A6DC83285396625 /* Pods-tokeys-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tokeys-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-tokeys-iOSUITests/Pods-tokeys-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6027EF55720A50F2636E9115 /* libPods-tokeys-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tokeys-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65232CAE37AF70771EAC2B2E /* Pods-tokeys-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tokeys-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-tokeys-iOSUITests/Pods-tokeys-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		70ED4CE62508ABADB901957C /* Pods-tokeys-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tokeys-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-tokeys-iOSTests/Pods-tokeys-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF2048611566E7C8AA0D24F7 /* libPods-tokeys-iOSUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tokeys-iOSUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E5058A22FA946F69F6435B /* Pods-tokeys-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tokeys-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-tokeys-iOSTests/Pods-tokeys-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		D6C1217D8DE61A58FA15B7D5 /* Pods-tokeys-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tokeys-iOS.debug.xcconfig"; path = "Target Support Files/Pods-tokeys-iOS/Pods-tokeys-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17C853F621D1E0D00007E864 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D9202E99ABF91037FC8C85A /* libPods-tokeys-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17C8540E21D1E0D20007E864 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F96FBD06DCCE569D87ACBC3B /* libPods-tokeys-iOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17C8541921D1E0D20007E864 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38DD62CC033636A40F3B176F /* libPods-tokeys-iOSUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17523E2621D1F7950066C82A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				17523E2F21D1FA940066C82A /* Tools */,
+				17523E2721D1F79B0066C82A /* View */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		17523E2721D1F79B0066C82A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17523E2821D1F7E70066C82A /* MainTouchTableView.h */,
+				17523E2921D1F7E70066C82A /* MainTouchTableView.m */,
+				17523E2B21D1F8480066C82A /* MainTouchScrollView.h */,
+				17523E2C21D1F8480066C82A /* MainTouchScrollView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17523E2F21D1FA940066C82A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				17523E3021D1FABD0066C82A /* TKMacros.h */,
+				17523E3321D1FBF80066C82A /* TokeyViewTools.h */,
+				17523E3421D1FBF80066C82A /* TokeyViewTools.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		17523E3621D1FDDE0066C82A /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				17523E3721D1FDE80066C82A /* Cell */,
+				17523E3821D1FE060066C82A /* TKChatListViewController.h */,
+				17523E3921D1FE060066C82A /* TKChatListViewController.m */,
+				17523E3A21D1FE060066C82A /* TKChatListViewController.xib */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		17523E3721D1FDE80066C82A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		17523E3D21D1FE630066C82A /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				17523E3E21D1FE800066C82A /* TKContactsViewController.h */,
+				17523E3F21D1FE800066C82A /* TKContactsViewController.m */,
+				17523E4021D1FE800066C82A /* TKContactsViewController.xib */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		17C853F021D1E0D00007E864 = {
+			isa = PBXGroup;
+			children = (
+				17C853FB21D1E0D00007E864 /* tokeys-iOS */,
+				17C8541421D1E0D20007E864 /* tokeys-iOSTests */,
+				17C8541F21D1E0D20007E864 /* tokeys-iOSUITests */,
+				17C853FA21D1E0D00007E864 /* Products */,
+				FCDE16B45C58A6919ABFD02E /* Pods */,
+				780C6F8B3D469C22A62C9755 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		17C853FA21D1E0D00007E864 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17C853F921D1E0D00007E864 /* tokeys-iOS.app */,
+				17C8541121D1E0D20007E864 /* tokeys-iOSTests.xctest */,
+				17C8541C21D1E0D20007E864 /* tokeys-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17C853FB21D1E0D00007E864 /* tokeys-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				17C853FC21D1E0D00007E864 /* AppDelegate.h */,
+				17C853FD21D1E0D00007E864 /* AppDelegate.m */,
+				17C8540721D1E0D20007E864 /* LaunchScreen.storyboard */,
+				17C8540521D1E0D20007E864 /* Assets.xcassets */,
+				17C8540221D1E0D00007E864 /* Main.storyboard */,
+				17C8542F21D1EFB40007E864 /* ViewController */,
+				17C8543021D1EFB40007E864 /* Core */,
+				17C8542E21D1EFB40007E864 /* Model */,
+				17523E2621D1F7950066C82A /* Utils */,
+				17C8540A21D1E0D20007E864 /* Info.plist */,
+				17C8540B21D1E0D20007E864 /* main.m */,
+				17523E2E21D1FA4D0066C82A /* tokeys.pch */,
+			);
+			path = "tokeys-iOS";
+			sourceTree = "<group>";
+		};
+		17C8541421D1E0D20007E864 /* tokeys-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				17C8541521D1E0D20007E864 /* tokeys_iOSTests.m */,
+				17C8541721D1E0D20007E864 /* Info.plist */,
+			);
+			path = "tokeys-iOSTests";
+			sourceTree = "<group>";
+		};
+		17C8541F21D1E0D20007E864 /* tokeys-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				17C8542021D1E0D20007E864 /* tokeys_iOSUITests.m */,
+				17C8542221D1E0D20007E864 /* Info.plist */,
+			);
+			path = "tokeys-iOSUITests";
+			sourceTree = "<group>";
+		};
+		17C8542E21D1EFB40007E864 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17C8542F21D1EFB40007E864 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				17C8543921D1F0C80007E864 /* Baae */,
+				17C8543221D1EFE60007E864 /* Main */,
+				17C8543121D1EFDE0007E864 /* Home */,
+				17523E3621D1FDDE0066C82A /* Chat */,
+				17523E3D21D1FE630066C82A /* Contacts */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		17C8543021D1EFB40007E864 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		17C8543121D1EFDE0007E864 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				17C8543321D1F0890007E864 /* HomeViewController.h */,
+				17C8543421D1F0890007E864 /* HomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		17C8543221D1EFE60007E864 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				17C8543621D1F0C40007E864 /* MainViewController.h */,
+				17C8543721D1F0C40007E864 /* MainViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		17C8543921D1F0C80007E864 /* Baae */ = {
+			isa = PBXGroup;
+			children = (
+				17C8543A21D1F0DB0007E864 /* TKBaseViewController.h */,
+				17C8543B21D1F0DB0007E864 /* TKBaseViewController.m */,
+			);
+			path = Baae;
+			sourceTree = "<group>";
+		};
+		780C6F8B3D469C22A62C9755 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6027EF55720A50F2636E9115 /* libPods-tokeys-iOS.a */,
+				3C19DE34743CF3B2005C7D85 /* libPods-tokeys-iOSTests.a */,
+				BF2048611566E7C8AA0D24F7 /* libPods-tokeys-iOSUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCDE16B45C58A6919ABFD02E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6C1217D8DE61A58FA15B7D5 /* Pods-tokeys-iOS.debug.xcconfig */,
+				0AB9C1F9743648951FDF1C3C /* Pods-tokeys-iOS.release.xcconfig */,
+				70ED4CE62508ABADB901957C /* Pods-tokeys-iOSTests.debug.xcconfig */,
+				C9E5058A22FA946F69F6435B /* Pods-tokeys-iOSTests.release.xcconfig */,
+				4206CA234A6DC83285396625 /* Pods-tokeys-iOSUITests.debug.xcconfig */,
+				65232CAE37AF70771EAC2B2E /* Pods-tokeys-iOSUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17C853F821D1E0D00007E864 /* tokeys-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17C8542521D1E0D20007E864 /* Build configuration list for PBXNativeTarget "tokeys-iOS" */;
+			buildPhases = (
+				C8D78C7CE9839C3C437C9B86 /* [CP] Check Pods Manifest.lock */,
+				17C853F521D1E0D00007E864 /* Sources */,
+				17C853F621D1E0D00007E864 /* Frameworks */,
+				17C853F721D1E0D00007E864 /* Resources */,
+				683D405D1E6386569F2CB160 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tokeys-iOS";
+			productName = "tokeys-iOS";
+			productReference = 17C853F921D1E0D00007E864 /* tokeys-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17C8541021D1E0D20007E864 /* tokeys-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17C8542821D1E0D20007E864 /* Build configuration list for PBXNativeTarget "tokeys-iOSTests" */;
+			buildPhases = (
+				BB3DBABE6BB190F76E08DF3B /* [CP] Check Pods Manifest.lock */,
+				17C8540D21D1E0D20007E864 /* Sources */,
+				17C8540E21D1E0D20007E864 /* Frameworks */,
+				17C8540F21D1E0D20007E864 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17C8541321D1E0D20007E864 /* PBXTargetDependency */,
+			);
+			name = "tokeys-iOSTests";
+			productName = "tokeys-iOSTests";
+			productReference = 17C8541121D1E0D20007E864 /* tokeys-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		17C8541B21D1E0D20007E864 /* tokeys-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17C8542B21D1E0D20007E864 /* Build configuration list for PBXNativeTarget "tokeys-iOSUITests" */;
+			buildPhases = (
+				CB0AB8554C5EADDDE1F70ECF /* [CP] Check Pods Manifest.lock */,
+				17C8541821D1E0D20007E864 /* Sources */,
+				17C8541921D1E0D20007E864 /* Frameworks */,
+				17C8541A21D1E0D20007E864 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17C8541E21D1E0D20007E864 /* PBXTargetDependency */,
+			);
+			name = "tokeys-iOSUITests";
+			productName = "tokeys-iOSUITests";
+			productReference = 17C8541C21D1E0D20007E864 /* tokeys-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17C853F121D1E0D00007E864 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "杨卢银";
+				TargetAttributes = {
+					17C853F821D1E0D00007E864 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					17C8541021D1E0D20007E864 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 17C853F821D1E0D00007E864;
+					};
+					17C8541B21D1E0D20007E864 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 17C853F821D1E0D00007E864;
+					};
+				};
+			};
+			buildConfigurationList = 17C853F421D1E0D00007E864 /* Build configuration list for PBXProject "tokeys-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17C853F021D1E0D00007E864;
+			productRefGroup = 17C853FA21D1E0D00007E864 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17C853F821D1E0D00007E864 /* tokeys-iOS */,
+				17C8541021D1E0D20007E864 /* tokeys-iOSTests */,
+				17C8541B21D1E0D20007E864 /* tokeys-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17C853F721D1E0D00007E864 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C8540921D1E0D20007E864 /* LaunchScreen.storyboard in Resources */,
+				17C8540621D1E0D20007E864 /* Assets.xcassets in Resources */,
+				17523E4221D1FE800066C82A /* TKContactsViewController.xib in Resources */,
+				17C8540421D1E0D00007E864 /* Main.storyboard in Resources */,
+				17523E3C21D1FE060066C82A /* TKChatListViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17C8540F21D1E0D20007E864 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17C8541A21D1E0D20007E864 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		683D405D1E6386569F2CB160 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tokeys-iOS/Pods-tokeys-iOS-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tokeys-iOS/Pods-tokeys-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB3DBABE6BB190F76E08DF3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tokeys-iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8D78C7CE9839C3C437C9B86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tokeys-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB0AB8554C5EADDDE1F70ECF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tokeys-iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17C853F521D1E0D00007E864 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C8543C21D1F0DB0007E864 /* TKBaseViewController.m in Sources */,
+				17523E4121D1FE800066C82A /* TKContactsViewController.m in Sources */,
+				17523E2D21D1F8480066C82A /* MainTouchScrollView.m in Sources */,
+				17523E2A21D1F7E70066C82A /* MainTouchTableView.m in Sources */,
+				17C8540C21D1E0D20007E864 /* main.m in Sources */,
+				17523E3B21D1FE060066C82A /* TKChatListViewController.m in Sources */,
+				17523E3521D1FBF80066C82A /* TokeyViewTools.m in Sources */,
+				17C853FE21D1E0D00007E864 /* AppDelegate.m in Sources */,
+				17C8543821D1F0C40007E864 /* MainViewController.m in Sources */,
+				17C8543521D1F0890007E864 /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17C8540D21D1E0D20007E864 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C8541621D1E0D20007E864 /* tokeys_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17C8541821D1E0D20007E864 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C8542121D1E0D20007E864 /* tokeys_iOSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17C8541321D1E0D20007E864 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17C853F821D1E0D00007E864 /* tokeys-iOS */;
+			targetProxy = 17C8541221D1E0D20007E864 /* PBXContainerItemProxy */;
+		};
+		17C8541E21D1E0D20007E864 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17C853F821D1E0D00007E864 /* tokeys-iOS */;
+			targetProxy = 17C8541D21D1E0D20007E864 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17C8540221D1E0D00007E864 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17C8540321D1E0D00007E864 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		17C8540721D1E0D20007E864 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17C8540821D1E0D20007E864 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17C8542321D1E0D20007E864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		17C8542421D1E0D20007E864 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17C8542621D1E0D20007E864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6C1217D8DE61A58FA15B7D5 /* Pods-tokeys-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/tokeys-iOS/tokeys.pch";
+				INFOPLIST_FILE = "tokeys-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xllyll.tokeys-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17C8542721D1E0D20007E864 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AB9C1F9743648951FDF1C3C /* Pods-tokeys-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/tokeys-iOS/tokeys.pch";
+				INFOPLIST_FILE = "tokeys-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xllyll.tokeys-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		17C8542921D1E0D20007E864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70ED4CE62508ABADB901957C /* Pods-tokeys-iOSTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "tokeys-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xllyll.tokeys-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tokeys-iOS.app/tokeys-iOS";
+			};
+			name = Debug;
+		};
+		17C8542A21D1E0D20007E864 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9E5058A22FA946F69F6435B /* Pods-tokeys-iOSTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "tokeys-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xllyll.tokeys-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tokeys-iOS.app/tokeys-iOS";
+			};
+			name = Release;
+		};
+		17C8542C21D1E0D20007E864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4206CA234A6DC83285396625 /* Pods-tokeys-iOSUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "tokeys-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xllyll.tokeys-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "tokeys-iOS";
+			};
+			name = Debug;
+		};
+		17C8542D21D1E0D20007E864 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65232CAE37AF70771EAC2B2E /* Pods-tokeys-iOSUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "tokeys-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xllyll.tokeys-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "tokeys-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17C853F421D1E0D00007E864 /* Build configuration list for PBXProject "tokeys-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17C8542321D1E0D20007E864 /* Debug */,
+				17C8542421D1E0D20007E864 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17C8542521D1E0D20007E864 /* Build configuration list for PBXNativeTarget "tokeys-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17C8542621D1E0D20007E864 /* Debug */,
+				17C8542721D1E0D20007E864 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17C8542821D1E0D20007E864 /* Build configuration list for PBXNativeTarget "tokeys-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17C8542921D1E0D20007E864 /* Debug */,
+				17C8542A21D1E0D20007E864 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17C8542B21D1E0D20007E864 /* Build configuration list for PBXNativeTarget "tokeys-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17C8542C21D1E0D20007E864 /* Debug */,
+				17C8542D21D1E0D20007E864 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17C853F121D1E0D00007E864 /* Project object */;
+}
