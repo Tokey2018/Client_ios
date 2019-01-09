@@ -15,7 +15,7 @@
 #import "TKChatListViewController.h"
 #import "TKContactsViewController.h"
 
-@interface HomeViewController ()<UIImagePickerControllerDelegate,WMPageControllerDelegate,UITableViewDelegate,UITableViewDataSource>{
+@interface HomeViewController ()<UIImagePickerControllerDelegate,WMPageControllerDelegate,WMPageControllerDataSource,UITableViewDelegate,UITableViewDataSource>{
     
     CGPoint center;
     CGFloat headViewHeight;
@@ -24,7 +24,8 @@
     CGFloat sectionHeaderHeight;    //section的header高度
     
 }
-
+@property(nonatomic ,strong) TKChatListViewController *chatListViewController;
+@property(nonatomic ,strong) TKContactsViewController *contactsViewController;
 
 @property(nonatomic ,strong) MainTouchTableView * mainTableView;
 
@@ -88,7 +89,7 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self createTitleView];
     [self createButtomView];
-    //[self createFooterView];
+    [self createFooterView];
 }
 - (void)setNavBarAppearence
 {
@@ -119,6 +120,10 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftBtn];
     
     
+    
+}
+
+-(void)createFooterView{
     UIImageView *footImageView = [[UIImageView alloc] initWithFrame:CGRectMake(-2, screen_height - 49, screen_width+4, 49)];
     //footImageView.image = [UIImage imageNamed:@"bg"];
     footImageView.backgroundColor = rgb(35, 35, 35);
@@ -137,14 +142,8 @@
     [centerbutton addTarget:self action:@selector(cameraClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:centerbutton];
     
-//    [centerbutton setRoundView];
-//    [centerbutton setBorderWidth:10.0 borderColor:footImageView.backgroundColor];
-}
-
--(void)createFooterView{
-    UIImageView *footImageView = [[UIImageView alloc] initWithFrame:CGRectMake(-2, screen_height - 74 + 2, screen_width+4, 74)];
-    footImageView.image = [UIImage imageNamed:@"bg"];
-    [self.view addSubview:footImageView];
+    [centerbutton setRoundView];
+    [centerbutton setBorderWidth:10.0 borderColor:footImageView.backgroundColor];
 }
 
 //录制视频
@@ -326,22 +325,25 @@
 
 - (WMPageController *)p_defaultController {
     
-    TKChatListViewController *oneTable = [[TKChatListViewController alloc]init];
+    TKChatListViewController *oneTable = [[TKChatListViewController alloc] init];
     //oneTable.delegate =self;
-    
-    
-    TKContactsViewController *twoTable = [[TKContactsViewController alloc]init];
+    _chatListViewController = oneTable;
+
+    TKContactsViewController *twoTable = [[TKContactsViewController alloc] init];
     //twoTable.delegate = self;
+    _contactsViewController = twoTable;
     
-    NSArray *viewControllers = @[oneTable,twoTable];
-    WMPageController *pageVC = [[WMPageController alloc] initWithViewControllerClasses:viewControllers andTheirTitles:@[@"聊天",@"联系人"]];
+    NSArray *viewControllers = @[TKChatListViewController.class,TKContactsViewController.class];
+    //WMPageController *pageVC = [[WMPageController alloc] initWithViewControllerClasses:viewControllers andTheirTitles:@[@"聊天",@"联系人"]];
     //[pageVC setViewFrame:CGRectMake(0, 0, screen_width, screen_height)];
-    pageVC.view.frame =CGRectMake(0, 0, screen_width, screen_height);
+    //pageVC.view.frame =CGRectMake(0, 0, screen_width, screen_height);
+    
+    WMPageController *pageVC = [[WMPageController alloc] init];
+    pageVC.dataSource = self;
     pageVC.delegate = self;
     pageVC.titleColorSelected = redMainColor;
     pageVC.titleColorNormal = rgb(101, 101, 101);
     pageVC.menuItemWidth = 85;
-    //pageVC.menuHeight = 44;
     pageVC.postNotification = YES;
     pageVC.bounces = YES;
     
@@ -350,7 +352,7 @@
     return pageVC;
 }
 
-- (void)pageController:(WMPageController *)pageController willEnterViewController:(__kindof UIViewController *)viewController withInfo:(NSDictionary *)info {
+- (void)pageController:(WMPageController *)pageController willEnterViewController:(__kindof UIViewController *)viewController withInfo:(NSDictionary *)info{
     XYLog(@"%@",viewController);
 }
 
@@ -426,5 +428,28 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+#pragma mark WMPageControllerDataSource
+- (NSInteger)numbersOfChildControllersInPageController:(WMPageController *)pageController{
+    return 2;
+}
+- (UIViewController *)pageController:(WMPageController *)pageController viewControllerAtIndex:(NSInteger)index{
+    if (index==0) {
+        return _chatListViewController;
+    }
+    return _contactsViewController;
+}
+-(NSString *)pageController:(WMPageController *)pageController titleAtIndex:(NSInteger)index{
+    if (index==0) {
+        return @"会话";
+    }
+    return @"联系人";
+}
+- (CGRect)pageController:(WMPageController *)pageController preferredFrameForContentView:(WMScrollView *)contentView{
+    CGFloat menuViewHeight = 44;
+    CGFloat height = screen_height - menuViewHeight - 64;
+    return CGRectMake(0, menuViewHeight, screen_width, height);
+}
+-(CGRect)pageController:(WMPageController *)pageController preferredFrameForMenuView:(WMMenuView *)menuView{
+    return CGRectMake(0, 0, screen_width, 44);
+}
 @end

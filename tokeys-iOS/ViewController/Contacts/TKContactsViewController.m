@@ -14,6 +14,10 @@
 
 @implementation TKContactsViewController
 
+- (instancetype)init {
+    return [self initWithNibName:@"TKContactsViewController" bundle:nil];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.

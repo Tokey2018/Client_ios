@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1750E71E21E5DDEF000601ED /* MainSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750E71C21E5DDEF000601ED /* MainSlideViewController.m */; };
+		1750E71F21E5DDEF000601ED /* MainSlideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1750E71D21E5DDEF000601ED /* MainSlideViewController.xib */; };
+		1750E72321E5DE74000601ED /* DrawerLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750E72121E5DE74000601ED /* DrawerLeftViewController.m */; };
+		1750E72421E5DE74000601ED /* DrawerLeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1750E72221E5DE74000601ED /* DrawerLeftViewController.xib */; };
+		1750E72721E5E17A000601ED /* TKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750E72621E5E17A000601ED /* TKNavigationController.m */; };
+		1750E72B21E5E3D5000601ED /* UIView+XYView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750E72A21E5E3D5000601ED /* UIView+XYView.m */; };
 		17523E2A21D1F7E70066C82A /* MainTouchTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17523E2921D1F7E70066C82A /* MainTouchTableView.m */; };
 		17523E2D21D1F8480066C82A /* MainTouchScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17523E2C21D1F8480066C82A /* MainTouchScrollView.m */; };
 		17523E3521D1FBF80066C82A /* TokeyViewTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 17523E3421D1FBF80066C82A /* TokeyViewTools.m */; };
@@ -48,6 +54,16 @@
 
 /* Begin PBXFileReference section */
 		0AB9C1F9743648951FDF1C3C /* Pods-tokeys-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tokeys-iOS.release.xcconfig"; path = "Target Support Files/Pods-tokeys-iOS/Pods-tokeys-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		1750E71B21E5DDEF000601ED /* MainSlideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainSlideViewController.h; sourceTree = "<group>"; };
+		1750E71C21E5DDEF000601ED /* MainSlideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainSlideViewController.m; sourceTree = "<group>"; };
+		1750E71D21E5DDEF000601ED /* MainSlideViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainSlideViewController.xib; sourceTree = "<group>"; };
+		1750E72021E5DE74000601ED /* DrawerLeftViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawerLeftViewController.h; sourceTree = "<group>"; };
+		1750E72121E5DE74000601ED /* DrawerLeftViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawerLeftViewController.m; sourceTree = "<group>"; };
+		1750E72221E5DE74000601ED /* DrawerLeftViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawerLeftViewController.xib; sourceTree = "<group>"; };
+		1750E72521E5E17A000601ED /* TKNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKNavigationController.h; sourceTree = "<group>"; };
+		1750E72621E5E17A000601ED /* TKNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKNavigationController.m; sourceTree = "<group>"; };
+		1750E72921E5E3D5000601ED /* UIView+XYView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+XYView.h"; sourceTree = "<group>"; };
+		1750E72A21E5E3D5000601ED /* UIView+XYView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+XYView.m"; sourceTree = "<group>"; };
 		17523E2821D1F7E70066C82A /* MainTouchTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTouchTableView.h; sourceTree = "<group>"; };
 		17523E2921D1F7E70066C82A /* MainTouchTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTouchTableView.m; sourceTree = "<group>"; };
 		17523E2B21D1F8480066C82A /* MainTouchScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTouchScrollView.h; sourceTree = "<group>"; };
@@ -120,6 +136,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1750E72821E5E38A000601ED /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1750E72921E5E3D5000601ED /* UIView+XYView.h */,
+				1750E72A21E5E3D5000601ED /* UIView+XYView.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		17523E2621D1F7950066C82A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,8 +237,9 @@
 				17C8543021D1EFB40007E864 /* Core */,
 				17C8542E21D1EFB40007E864 /* Model */,
 				17523E2621D1F7950066C82A /* Utils */,
-				17C8540A21D1E0D20007E864 /* Info.plist */,
+				1750E72821E5E38A000601ED /* Extension */,
 				17C8540B21D1E0D20007E864 /* main.m */,
+				17C8540A21D1E0D20007E864 /* Info.plist */,
 				17523E2E21D1FA4D0066C82A /* tokeys.pch */,
 			);
 			path = "tokeys-iOS";
@@ -277,6 +303,12 @@
 			children = (
 				17C8543621D1F0C40007E864 /* MainViewController.h */,
 				17C8543721D1F0C40007E864 /* MainViewController.m */,
+				1750E71B21E5DDEF000601ED /* MainSlideViewController.h */,
+				1750E71C21E5DDEF000601ED /* MainSlideViewController.m */,
+				1750E71D21E5DDEF000601ED /* MainSlideViewController.xib */,
+				1750E72021E5DE74000601ED /* DrawerLeftViewController.h */,
+				1750E72121E5DE74000601ED /* DrawerLeftViewController.m */,
+				1750E72221E5DE74000601ED /* DrawerLeftViewController.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -286,6 +318,8 @@
 			children = (
 				17C8543A21D1F0DB0007E864 /* TKBaseViewController.h */,
 				17C8543B21D1F0DB0007E864 /* TKBaseViewController.m */,
+				1750E72521E5E17A000601ED /* TKNavigationController.h */,
+				1750E72621E5E17A000601ED /* TKNavigationController.m */,
 			);
 			path = Baae;
 			sourceTree = "<group>";
@@ -424,7 +458,9 @@
 				17C8540621D1E0D20007E864 /* Assets.xcassets in Resources */,
 				17523E4221D1FE800066C82A /* TKContactsViewController.xib in Resources */,
 				17C8540421D1E0D00007E864 /* Main.storyboard in Resources */,
+				1750E72421E5DE74000601ED /* DrawerLeftViewController.xib in Resources */,
 				17523E3C21D1FE060066C82A /* TKChatListViewController.xib in Resources */,
+				1750E71F21E5DDEF000601ED /* MainSlideViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +580,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1750E72B21E5E3D5000601ED /* UIView+XYView.m in Sources */,
 				17C8543C21D1F0DB0007E864 /* TKBaseViewController.m in Sources */,
 				17523E4121D1FE800066C82A /* TKContactsViewController.m in Sources */,
 				17523E2D21D1F8480066C82A /* MainTouchScrollView.m in Sources */,
@@ -552,7 +589,10 @@
 				17523E3B21D1FE060066C82A /* TKChatListViewController.m in Sources */,
 				17523E3521D1FBF80066C82A /* TokeyViewTools.m in Sources */,
 				17C853FE21D1E0D00007E864 /* AppDelegate.m in Sources */,
+				1750E72321E5DE74000601ED /* DrawerLeftViewController.m in Sources */,
+				1750E72721E5E17A000601ED /* TKNavigationController.m in Sources */,
 				17C8543821D1F0C40007E864 /* MainViewController.m in Sources */,
+				1750E71E21E5DDEF000601ED /* MainSlideViewController.m in Sources */,
 				17C8543521D1F0890007E864 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "MainSlideViewController.h"
 
 @interface MainViewController ()
 
@@ -22,6 +23,11 @@
 
 -(void)pushHomeOrLogin{
     
+    MainSlideViewController *homeVC = [[MainSlideViewController alloc] init];
+    
+    [self presentViewController:homeVC animated:YES completion:^{
+        
+    }];
 }
 
 @end

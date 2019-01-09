@@ -27,7 +27,9 @@ target 'tokeys-iOS' do
   pod 'TZImagePickerController'
   pod 'YNPageViewController'
   pod 'WMPageController', '~> 2.4.0' 
-
+  pod 'MMDrawerController', '~> 0.5.7'
+  pod 'TouchAreaInsets'
+  
   target 'tokeys-iOSTests' do
     inherit! :search_paths
     # Pods for testing
