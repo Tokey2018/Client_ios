@@ -37,54 +37,16 @@
 
 @property(nonatomic ,strong) UIView *headView;//头部图片
 
-@property(nonatomic , weak ) UIImageView *lineImageView;
-
 @end
 
 @implementation HomeViewController
-
-
-//视图将要显示时隐藏
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    
-    _lineImageView.hidden = YES;
-    
-}
-
-//视图将要消失时取消隐藏
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    
-    _lineImageView.hidden = NO;
-    
-}
-//找到导航栏最下面黑线视图
-- (UIImageView *)getLineViewInNavigationBar:(UIView *)view
-{
-    if ([view isKindOfClass:UIImageView.class] && view.bounds.size.height <= 1.0) {
-        return (UIImageView *)view;
-    }
-    
-    for (UIView *subview in view.subviews) {
-        UIImageView *imageView = [self getLineViewInNavigationBar:subview];
-        if (imageView) {
-            return imageView;
-        }
-    }
-    
-    return nil;
-}
-
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self setNavBarAppearence];
     
-    _lineImageView = [self getLineViewInNavigationBar:self.navigationController.navigationBar];
+    
     headViewHeight = UINavBar_Height+W_In_375(1);
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self createTitleView];
@@ -95,7 +57,7 @@
 {
     //    UIColor *textColor = [UIColor colorWithRed:207.00/255.0 green:48.00/255.0 blue:26.00/255.0 alpha:1];
     //    // 设置导航栏默认的背景颜色
-    //    [WRNavigationBar wr_setDefaultNavBarBarTintColor:[UIColor clearColor]];
+    [WRNavigationBar wr_setDefaultNavBarBarTintColor:[UIColor whiteColor]];
     // 设置导航栏所有按钮的默认颜色
     [WRNavigationBar wr_setDefaultNavBarTintColor:redMainColor];
     //    // 设置导航栏标题默认颜色
@@ -103,7 +65,8 @@
     //    // 统一设置状态栏样式
     //    [WRNavigationBar wr_setDefaultStatusBarStyle:UIStatusBarStyleLightContent];
     // 如果需要设置导航栏底部分割线隐藏，可以在这里统一设置
-    [WRNavigationBar wr_setDefaultNavBarShadowImageHidden:YES];
+//    [WRNavigationBar wr_setDefaultNavBarShadowImageHidden:YES];
+    [self wr_setNavBarShadowImageHidden:YES];
 }
 -(void)createButtomView{
     
@@ -184,16 +147,16 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
     //获取滚动视图y值的偏移量
-    CGFloat tabOffsetY = [_mainTableView rectForSection:0].origin.y;
+    CGFloat tabOffsetY = [self.mainTableView rectForSection:0].origin.y;
     CGFloat offsetY = scrollView.contentOffset.y;
     
     NSLog(@"%f",self.mainTableView.contentOffset.y);
     if (self.mainTableView.contentOffset.y <= 0) {
+        
         self.mainTableView.bounces = NO;
         
         NSLog(@"禁止下拉");
-    }
-    else if (self.mainTableView.contentOffset.y >= 0){
+    }else if (self.mainTableView.contentOffset.y >= 0){
         self.mainTableView.bounces = YES;
         NSLog(@"允许上拉");
         
@@ -233,13 +196,7 @@
         CGRect rect = self.navigationController.navigationBar.frame;
         rect.origin.y = y;
         self.navigationController.navigationBar.frame = rect;
-        //        [UIView animateWithDuration:0.25 animations:^{
-        //            CGRect rect = self.navigationController.navigationBar.frame;
-        //            rect.origin.y = 20;
-        //            self.navigationController.navigationBar.frame = rect;
-        //        } completion:^(BOOL finished) {
-        //
-        //        }];
+      
     }else{
         XYLog(@"<<<<<%.2f",offsetY);
         CGFloat y   = -68;
@@ -376,7 +333,7 @@
         _mainTableView.showsVerticalScrollIndicator = NO;
         _mainTableView.contentInset = UIEdgeInsetsMake(headViewHeight,0, 0, 0);
         _mainTableView.backgroundColor = [UIColor clearColor];
-        
+        _mainTableView.backgroundColor = [UIColor whiteColor];
     }
     return _mainTableView;
 }

@@ -10,6 +10,7 @@
 #import "HomeViewController.h"
 #import "DrawerLeftViewController.h"
 #import "TKNavigationController.h"
+#import "WRNavigationBar.h"
 
 typedef enum State {
     kStateHome,
@@ -41,6 +42,11 @@ static const CGFloat menuStartNarrowRatio  = 0.70;
 @end
 
 @implementation MainSlideViewController
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    XYLog(@"");
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -190,7 +196,9 @@ static const CGFloat menuStartNarrowRatio  = 0.70;
         self.messageNav.view.layer.shadowRadius = 5;
         
     } completion:^(BOOL finished) {
-        
+        if (self.state == kStateHome) {
+            [self.homeVC wr_setNavBarShadowImageHidden:YES];
+        }
     }];
 }
 
@@ -198,7 +206,7 @@ static const CGFloat menuStartNarrowRatio  = 0.70;
 - (void)homeViewController:(HomeViewController *)homeVC leftBtnClicked:(id)sender{
     [self showMenu];
 }
--(void)homeViewController:(HomeViewController *)homeVC closeBtnClicked:(id)sender{
+- (void)homeViewController:(HomeViewController *)homeVC closeBtnClicked:(id)sender{
     [self showHome];
 }
 #pragma mark DrawerLeftViewContrllerDeleagate
