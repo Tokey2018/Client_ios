@@ -17,13 +17,27 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch.png" translatesAutoresizingMaskIntoConstraints="NO" id="gHU-9h-aH2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gHU-9h-aH2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1i8-qg-Cxt"/>
+                            <constraint firstItem="gHU-9h-aH2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5nt-Ih-jjV"/>
+                            <constraint firstItem="gHU-9h-aH2" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Vh4-WH-EDx"/>
+                            <constraint firstItem="gHU-9h-aH2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tgv-7d-QX6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launch.png" width="750" height="1334"/>
+    </resources>
 </document>

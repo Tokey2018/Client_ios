@@ -8,6 +8,8 @@
 
 #import "MainViewController.h"
 #import "MainSlideViewController.h"
+#import "TKUserLoginViewController.h"
+#import "TKNavigationController.h"
 
 @interface MainViewController ()
 
@@ -23,11 +25,20 @@
 
 -(void)pushHomeOrLogin{
     
-    MainSlideViewController *homeVC = [[MainSlideViewController alloc] init];
+    if (TKCore.shareCore.userRespose==nil) {
+        TKUserLoginViewController *userlogin = [[TKUserLoginViewController alloc] init];
+        TKNavigationController *nav = [[TKNavigationController alloc] initWithRootViewController:userlogin];
+        [self presentViewController:nav animated:YES completion:^{
+            
+        }];
+    }else{
     
-    [self presentViewController:homeVC animated:YES completion:^{
+        MainSlideViewController *homeVC = [[MainSlideViewController alloc] init];
         
-    }];
+        [self presentViewController:homeVC animated:YES completion:^{
+            
+        }];
+    }
 }
 
 @end

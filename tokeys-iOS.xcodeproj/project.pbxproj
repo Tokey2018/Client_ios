@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17205529221D4A200087FCCB /* UIButton+TouchAreaInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 17205528221D4A200087FCCB /* UIButton+TouchAreaInsets.m */; };
 		1750E71E21E5DDEF000601ED /* MainSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750E71C21E5DDEF000601ED /* MainSlideViewController.m */; };
 		1750E71F21E5DDEF000601ED /* MainSlideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1750E71D21E5DDEF000601ED /* MainSlideViewController.xib */; };
 		1750E72321E5DE74000601ED /* DrawerLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750E72121E5DE74000601ED /* DrawerLeftViewController.m */; };
 		1750E72421E5DE74000601ED /* DrawerLeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1750E72221E5DE74000601ED /* DrawerLeftViewController.xib */; };
 		1750E72721E5E17A000601ED /* TKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750E72621E5E17A000601ED /* TKNavigationController.m */; };
 		1750E72B21E5E3D5000601ED /* UIView+XYView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750E72A21E5E3D5000601ED /* UIView+XYView.m */; };
+		1750E72D21E5FDB0000601ED /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 1750E72C21E5FDB0000601ED /* launch.png */; };
+		1750E73021E6046F000601ED /* TKCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750E72F21E6046F000601ED /* TKCore.m */; };
+		1750E73521E6050D000601ED /* TKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750E73421E6050D000601ED /* TKModel.m */; };
+		1750E73821E6056F000601ED /* TKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750E73721E6056F000601ED /* TKUser.m */; };
+		1750E73B21E60585000601ED /* TKUserRespose.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750E73A21E60585000601ED /* TKUserRespose.m */; };
+		1750E73E21E605EE000601ED /* TKDataCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750E73D21E605EE000601ED /* TKDataCore.m */; };
+		1750E74221E6065E000601ED /* TKFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750E74121E6065E000601ED /* TKFileManager.m */; };
+		1750E74721E607BE000601ED /* TKUserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750E74521E607BE000601ED /* TKUserLoginViewController.m */; };
+		1750E74821E607BE000601ED /* TKUserLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1750E74621E607BE000601ED /* TKUserLoginViewController.xib */; };
 		17523E2A21D1F7E70066C82A /* MainTouchTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17523E2921D1F7E70066C82A /* MainTouchTableView.m */; };
 		17523E2D21D1F8480066C82A /* MainTouchScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17523E2C21D1F8480066C82A /* MainTouchScrollView.m */; };
 		17523E3521D1FBF80066C82A /* TokeyViewTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 17523E3421D1FBF80066C82A /* TokeyViewTools.m */; };
@@ -20,6 +30,21 @@
 		17523E3C21D1FE060066C82A /* TKChatListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17523E3A21D1FE060066C82A /* TKChatListViewController.xib */; };
 		17523E4121D1FE800066C82A /* TKContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17523E3F21D1FE800066C82A /* TKContactsViewController.m */; };
 		17523E4221D1FE800066C82A /* TKContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17523E4021D1FE800066C82A /* TKContactsViewController.xib */; };
+		1758D794221D4B7500D1F623 /* TKSqliteTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1758D793221D4B7500D1F623 /* TKSqliteTools.m */; };
+		1758D798221D4CFB00D1F623 /* TKHttpAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1758D797221D4CFB00D1F623 /* TKHttpAction.m */; };
+		1758D79B221D4E4200D1F623 /* AFHTTPSessionManager+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 1758D79A221D4E4200D1F623 /* AFHTTPSessionManager+XY.m */; };
+		1758D79E221D4EEB00D1F623 /* TKUserSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 1758D79D221D4EEB00D1F623 /* TKUserSetting.m */; };
+		1758D7A1221D509800D1F623 /* XYHUDCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1758D7A0221D509800D1F623 /* XYHUDCore.m */; };
+		1758D7A4221D521500D1F623 /* TKUserAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1758D7A3221D521500D1F623 /* TKUserAction.m */; };
+		1758D7A7221D533B00D1F623 /* TKDoLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1758D7A6221D533B00D1F623 /* TKDoLoginModel.m */; };
+		1758D7AA221D537100D1F623 /* TKUserInfoNewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1758D7A9221D537100D1F623 /* TKUserInfoNewModel.m */; };
+		1758D7AD221D554A00D1F623 /* TKHttpResposeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1758D7AC221D554A00D1F623 /* TKHttpResposeModel.m */; };
+		1758D7B1221D573800D1F623 /* TKUserRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1758D7AF221D573800D1F623 /* TKUserRegisterViewController.m */; };
+		1758D7B2221D573800D1F623 /* TKUserRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1758D7B0221D573800D1F623 /* TKUserRegisterViewController.xib */; };
+		1758D7BB221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1758D7B9221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.m */; };
+		1758D7BC221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1758D7BA221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.xib */; };
+		1758D7C1221D57D900D1F623 /* TKAccountTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1758D7BF221D57D900D1F623 /* TKAccountTVCell.m */; };
+		1758D7C2221D57D900D1F623 /* TKAccountTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1758D7C0221D57D900D1F623 /* TKAccountTVCell.xib */; };
 		17C853FE21D1E0D00007E864 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C853FD21D1E0D00007E864 /* AppDelegate.m */; };
 		17C8540421D1E0D00007E864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C8540221D1E0D00007E864 /* Main.storyboard */; };
 		17C8540621D1E0D20007E864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C8540521D1E0D20007E864 /* Assets.xcassets */; };
@@ -54,6 +79,8 @@
 
 /* Begin PBXFileReference section */
 		0AB9C1F9743648951FDF1C3C /* Pods-tokeys-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tokeys-iOS.release.xcconfig"; path = "Target Support Files/Pods-tokeys-iOS/Pods-tokeys-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		17205527221D4A200087FCCB /* UIButton+TouchAreaInsets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+TouchAreaInsets.h"; sourceTree = "<group>"; };
+		17205528221D4A200087FCCB /* UIButton+TouchAreaInsets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TouchAreaInsets.m"; sourceTree = "<group>"; };
 		1750E71B21E5DDEF000601ED /* MainSlideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainSlideViewController.h; sourceTree = "<group>"; };
 		1750E71C21E5DDEF000601ED /* MainSlideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainSlideViewController.m; sourceTree = "<group>"; };
 		1750E71D21E5DDEF000601ED /* MainSlideViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainSlideViewController.xib; sourceTree = "<group>"; };
@@ -64,6 +91,22 @@
 		1750E72621E5E17A000601ED /* TKNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKNavigationController.m; sourceTree = "<group>"; };
 		1750E72921E5E3D5000601ED /* UIView+XYView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+XYView.h"; sourceTree = "<group>"; };
 		1750E72A21E5E3D5000601ED /* UIView+XYView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+XYView.m"; sourceTree = "<group>"; };
+		1750E72C21E5FDB0000601ED /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
+		1750E72E21E6046F000601ED /* TKCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKCore.h; sourceTree = "<group>"; };
+		1750E72F21E6046F000601ED /* TKCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKCore.m; sourceTree = "<group>"; };
+		1750E73321E6050D000601ED /* TKModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKModel.h; sourceTree = "<group>"; };
+		1750E73421E6050D000601ED /* TKModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKModel.m; sourceTree = "<group>"; };
+		1750E73621E6056F000601ED /* TKUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKUser.h; sourceTree = "<group>"; };
+		1750E73721E6056F000601ED /* TKUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKUser.m; sourceTree = "<group>"; };
+		1750E73921E60585000601ED /* TKUserRespose.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKUserRespose.h; sourceTree = "<group>"; };
+		1750E73A21E60585000601ED /* TKUserRespose.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKUserRespose.m; sourceTree = "<group>"; };
+		1750E73C21E605EE000601ED /* TKDataCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKDataCore.h; sourceTree = "<group>"; };
+		1750E73D21E605EE000601ED /* TKDataCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKDataCore.m; sourceTree = "<group>"; };
+		1750E74021E6065E000601ED /* TKFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKFileManager.h; sourceTree = "<group>"; };
+		1750E74121E6065E000601ED /* TKFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKFileManager.m; sourceTree = "<group>"; };
+		1750E74421E607BE000601ED /* TKUserLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKUserLoginViewController.h; sourceTree = "<group>"; };
+		1750E74521E607BE000601ED /* TKUserLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKUserLoginViewController.m; sourceTree = "<group>"; };
+		1750E74621E607BE000601ED /* TKUserLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKUserLoginViewController.xib; sourceTree = "<group>"; };
 		17523E2821D1F7E70066C82A /* MainTouchTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTouchTableView.h; sourceTree = "<group>"; };
 		17523E2921D1F7E70066C82A /* MainTouchTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTouchTableView.m; sourceTree = "<group>"; };
 		17523E2B21D1F8480066C82A /* MainTouchScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTouchScrollView.h; sourceTree = "<group>"; };
@@ -78,6 +121,33 @@
 		17523E3E21D1FE800066C82A /* TKContactsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKContactsViewController.h; sourceTree = "<group>"; };
 		17523E3F21D1FE800066C82A /* TKContactsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKContactsViewController.m; sourceTree = "<group>"; };
 		17523E4021D1FE800066C82A /* TKContactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKContactsViewController.xib; sourceTree = "<group>"; };
+		1758D792221D4B7500D1F623 /* TKSqliteTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKSqliteTools.h; sourceTree = "<group>"; };
+		1758D793221D4B7500D1F623 /* TKSqliteTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKSqliteTools.m; sourceTree = "<group>"; };
+		1758D796221D4CFB00D1F623 /* TKHttpAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKHttpAction.h; sourceTree = "<group>"; };
+		1758D797221D4CFB00D1F623 /* TKHttpAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKHttpAction.m; sourceTree = "<group>"; };
+		1758D799221D4E4200D1F623 /* AFHTTPSessionManager+XY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+XY.h"; sourceTree = "<group>"; };
+		1758D79A221D4E4200D1F623 /* AFHTTPSessionManager+XY.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+XY.m"; sourceTree = "<group>"; };
+		1758D79C221D4EEB00D1F623 /* TKUserSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKUserSetting.h; sourceTree = "<group>"; };
+		1758D79D221D4EEB00D1F623 /* TKUserSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKUserSetting.m; sourceTree = "<group>"; };
+		1758D79F221D509800D1F623 /* XYHUDCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYHUDCore.h; sourceTree = "<group>"; };
+		1758D7A0221D509800D1F623 /* XYHUDCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYHUDCore.m; sourceTree = "<group>"; };
+		1758D7A2221D521500D1F623 /* TKUserAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKUserAction.h; sourceTree = "<group>"; };
+		1758D7A3221D521500D1F623 /* TKUserAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKUserAction.m; sourceTree = "<group>"; };
+		1758D7A5221D533B00D1F623 /* TKDoLoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKDoLoginModel.h; sourceTree = "<group>"; };
+		1758D7A6221D533B00D1F623 /* TKDoLoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKDoLoginModel.m; sourceTree = "<group>"; };
+		1758D7A8221D537100D1F623 /* TKUserInfoNewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKUserInfoNewModel.h; sourceTree = "<group>"; };
+		1758D7A9221D537100D1F623 /* TKUserInfoNewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKUserInfoNewModel.m; sourceTree = "<group>"; };
+		1758D7AB221D554A00D1F623 /* TKHttpResposeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKHttpResposeModel.h; sourceTree = "<group>"; };
+		1758D7AC221D554A00D1F623 /* TKHttpResposeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKHttpResposeModel.m; sourceTree = "<group>"; };
+		1758D7AE221D573800D1F623 /* TKUserRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKUserRegisterViewController.h; sourceTree = "<group>"; };
+		1758D7AF221D573800D1F623 /* TKUserRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKUserRegisterViewController.m; sourceTree = "<group>"; };
+		1758D7B0221D573800D1F623 /* TKUserRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKUserRegisterViewController.xib; sourceTree = "<group>"; };
+		1758D7B8221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKUserFindPassVerifyPhoneViewController.h; sourceTree = "<group>"; };
+		1758D7B9221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKUserFindPassVerifyPhoneViewController.m; sourceTree = "<group>"; };
+		1758D7BA221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKUserFindPassVerifyPhoneViewController.xib; sourceTree = "<group>"; };
+		1758D7BE221D57D900D1F623 /* TKAccountTVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKAccountTVCell.h; sourceTree = "<group>"; };
+		1758D7BF221D57D900D1F623 /* TKAccountTVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKAccountTVCell.m; sourceTree = "<group>"; };
+		1758D7C0221D57D900D1F623 /* TKAccountTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKAccountTVCell.xib; sourceTree = "<group>"; };
 		17C853F921D1E0D00007E864 /* tokeys-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tokeys-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C853FC21D1E0D00007E864 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		17C853FD21D1E0D00007E864 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -141,8 +211,62 @@
 			children = (
 				1750E72921E5E3D5000601ED /* UIView+XYView.h */,
 				1750E72A21E5E3D5000601ED /* UIView+XYView.m */,
+				17205527221D4A200087FCCB /* UIButton+TouchAreaInsets.h */,
+				17205528221D4A200087FCCB /* UIButton+TouchAreaInsets.m */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		1750E73121E604EF000601ED /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1750E73321E6050D000601ED /* TKModel.h */,
+				1750E73421E6050D000601ED /* TKModel.m */,
+				1758D7AB221D554A00D1F623 /* TKHttpResposeModel.h */,
+				1758D7AC221D554A00D1F623 /* TKHttpResposeModel.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1750E73221E604FA000601ED /* User */ = {
+			isa = PBXGroup;
+			children = (
+				1750E73621E6056F000601ED /* TKUser.h */,
+				1750E73721E6056F000601ED /* TKUser.m */,
+				1750E73921E60585000601ED /* TKUserRespose.h */,
+				1750E73A21E60585000601ED /* TKUserRespose.m */,
+				1758D7A8221D537100D1F623 /* TKUserInfoNewModel.h */,
+				1758D7A9221D537100D1F623 /* TKUserInfoNewModel.m */,
+				1758D7A5221D533B00D1F623 /* TKDoLoginModel.h */,
+				1758D7A6221D533B00D1F623 /* TKDoLoginModel.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		1750E73F21E60653000601ED /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				1750E74021E6065E000601ED /* TKFileManager.h */,
+				1750E74121E6065E000601ED /* TKFileManager.m */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
+		1750E74321E60796000601ED /* User */ = {
+			isa = PBXGroup;
+			children = (
+				1758D7BD221D57BD00D1F623 /* Cell */,
+				1750E74421E607BE000601ED /* TKUserLoginViewController.h */,
+				1750E74521E607BE000601ED /* TKUserLoginViewController.m */,
+				1750E74621E607BE000601ED /* TKUserLoginViewController.xib */,
+				1758D7AE221D573800D1F623 /* TKUserRegisterViewController.h */,
+				1758D7AF221D573800D1F623 /* TKUserRegisterViewController.m */,
+				1758D7B0221D573800D1F623 /* TKUserRegisterViewController.xib */,
+				1758D7B8221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.h */,
+				1758D7B9221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.m */,
+				1758D7BA221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.xib */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		17523E2621D1F7950066C82A /* Utils */ = {
@@ -171,6 +295,12 @@
 				17523E3021D1FABD0066C82A /* TKMacros.h */,
 				17523E3321D1FBF80066C82A /* TokeyViewTools.h */,
 				17523E3421D1FBF80066C82A /* TokeyViewTools.m */,
+				1758D792221D4B7500D1F623 /* TKSqliteTools.h */,
+				1758D793221D4B7500D1F623 /* TKSqliteTools.m */,
+				1758D79C221D4EEB00D1F623 /* TKUserSetting.h */,
+				1758D79D221D4EEB00D1F623 /* TKUserSetting.m */,
+				1758D79F221D509800D1F623 /* XYHUDCore.h */,
+				1758D7A0221D509800D1F623 /* XYHUDCore.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -201,6 +331,29 @@
 				17523E4021D1FE800066C82A /* TKContactsViewController.xib */,
 			);
 			path = Contacts;
+			sourceTree = "<group>";
+		};
+		1758D795221D4CE300D1F623 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				1758D799221D4E4200D1F623 /* AFHTTPSessionManager+XY.h */,
+				1758D79A221D4E4200D1F623 /* AFHTTPSessionManager+XY.m */,
+				1758D796221D4CFB00D1F623 /* TKHttpAction.h */,
+				1758D797221D4CFB00D1F623 /* TKHttpAction.m */,
+				1758D7A2221D521500D1F623 /* TKUserAction.h */,
+				1758D7A3221D521500D1F623 /* TKUserAction.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		1758D7BD221D57BD00D1F623 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1758D7BE221D57D900D1F623 /* TKAccountTVCell.h */,
+				1758D7BF221D57D900D1F623 /* TKAccountTVCell.m */,
+				1758D7C0221D57D900D1F623 /* TKAccountTVCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		17C853F021D1E0D00007E864 = {
@@ -238,8 +391,10 @@
 				17C8542E21D1EFB40007E864 /* Model */,
 				17523E2621D1F7950066C82A /* Utils */,
 				1750E72821E5E38A000601ED /* Extension */,
-				17C8540B21D1E0D20007E864 /* main.m */,
+				1758D795221D4CE300D1F623 /* Http */,
 				17C8540A21D1E0D20007E864 /* Info.plist */,
+				17C8540B21D1E0D20007E864 /* main.m */,
+				1750E72C21E5FDB0000601ED /* launch.png */,
 				17523E2E21D1FA4D0066C82A /* tokeys.pch */,
 			);
 			path = "tokeys-iOS";
@@ -266,6 +421,8 @@
 		17C8542E21D1EFB40007E864 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1750E73121E604EF000601ED /* Base */,
+				1750E73221E604FA000601ED /* User */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -276,6 +433,7 @@
 				17C8543921D1F0C80007E864 /* Baae */,
 				17C8543221D1EFE60007E864 /* Main */,
 				17C8543121D1EFDE0007E864 /* Home */,
+				1750E74321E60796000601ED /* User */,
 				17523E3621D1FDDE0066C82A /* Chat */,
 				17523E3D21D1FE630066C82A /* Contacts */,
 			);
@@ -285,6 +443,11 @@
 		17C8543021D1EFB40007E864 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				1750E73F21E60653000601ED /* manager */,
+				1750E72E21E6046F000601ED /* TKCore.h */,
+				1750E72F21E6046F000601ED /* TKCore.m */,
+				1750E73C21E605EE000601ED /* TKDataCore.h */,
+				1750E73D21E605EE000601ED /* TKDataCore.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -359,6 +522,7 @@
 				17C853F621D1E0D00007E864 /* Frameworks */,
 				17C853F721D1E0D00007E864 /* Resources */,
 				683D405D1E6386569F2CB160 /* [CP] Copy Pods Resources */,
+				1451C4050AF88E7F4BA9E14F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -454,12 +618,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1758D7B2221D573800D1F623 /* TKUserRegisterViewController.xib in Resources */,
+				1750E72D21E5FDB0000601ED /* launch.png in Resources */,
 				17C8540921D1E0D20007E864 /* LaunchScreen.storyboard in Resources */,
+				1758D7BC221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.xib in Resources */,
+				1750E74821E607BE000601ED /* TKUserLoginViewController.xib in Resources */,
 				17C8540621D1E0D20007E864 /* Assets.xcassets in Resources */,
 				17523E4221D1FE800066C82A /* TKContactsViewController.xib in Resources */,
 				17C8540421D1E0D00007E864 /* Main.storyboard in Resources */,
 				1750E72421E5DE74000601ED /* DrawerLeftViewController.xib in Resources */,
 				17523E3C21D1FE060066C82A /* TKChatListViewController.xib in Resources */,
+				1758D7C2221D57D900D1F623 /* TKAccountTVCell.xib in Resources */,
 				1750E71F21E5DDEF000601ED /* MainSlideViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +650,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1451C4050AF88E7F4BA9E14F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tokeys-iOS/Pods-tokeys-iOS-frameworks.sh",
+				"${PODS_ROOT}/NIMSDK/NIMSDK/NIMSDK.framework",
+				"${PODS_ROOT}/NIMSDK/NIMAVChat/NIMAVChat.framework",
+				"${PODS_ROOT}/NIMSDK/NIMAVChat/NMC.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIMSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIMAVChat.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NMC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tokeys-iOS/Pods-tokeys-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		683D405D1E6386569F2CB160 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -492,6 +687,8 @@
 				"${PODS_ROOT}/Target Support Files/Pods-tokeys-iOS/Pods-tokeys-iOS-resources.sh",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/NIMSDK/NIMAVChat/Resources/NMCVideoFilter.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -500,6 +697,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NMCVideoFilter.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,19 +779,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1750E74721E607BE000601ED /* TKUserLoginViewController.m in Sources */,
+				1750E74221E6065E000601ED /* TKFileManager.m in Sources */,
 				1750E72B21E5E3D5000601ED /* UIView+XYView.m in Sources */,
 				17C8543C21D1F0DB0007E864 /* TKBaseViewController.m in Sources */,
 				17523E4121D1FE800066C82A /* TKContactsViewController.m in Sources */,
+				1750E73B21E60585000601ED /* TKUserRespose.m in Sources */,
+				1758D798221D4CFB00D1F623 /* TKHttpAction.m in Sources */,
+				1758D7A1221D509800D1F623 /* XYHUDCore.m in Sources */,
+				1758D7C1221D57D900D1F623 /* TKAccountTVCell.m in Sources */,
+				1750E73E21E605EE000601ED /* TKDataCore.m in Sources */,
+				1758D7A4221D521500D1F623 /* TKUserAction.m in Sources */,
+				1750E73021E6046F000601ED /* TKCore.m in Sources */,
+				17205529221D4A200087FCCB /* UIButton+TouchAreaInsets.m in Sources */,
+				1758D7BB221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.m in Sources */,
+				1758D7AA221D537100D1F623 /* TKUserInfoNewModel.m in Sources */,
+				1750E73521E6050D000601ED /* TKModel.m in Sources */,
+				1750E73821E6056F000601ED /* TKUser.m in Sources */,
 				17523E2D21D1F8480066C82A /* MainTouchScrollView.m in Sources */,
 				17523E2A21D1F7E70066C82A /* MainTouchTableView.m in Sources */,
+				1758D79E221D4EEB00D1F623 /* TKUserSetting.m in Sources */,
 				17C8540C21D1E0D20007E864 /* main.m in Sources */,
 				17523E3B21D1FE060066C82A /* TKChatListViewController.m in Sources */,
 				17523E3521D1FBF80066C82A /* TokeyViewTools.m in Sources */,
 				17C853FE21D1E0D00007E864 /* AppDelegate.m in Sources */,
 				1750E72321E5DE74000601ED /* DrawerLeftViewController.m in Sources */,
 				1750E72721E5E17A000601ED /* TKNavigationController.m in Sources */,
+				1758D7AD221D554A00D1F623 /* TKHttpResposeModel.m in Sources */,
+				1758D79B221D4E4200D1F623 /* AFHTTPSessionManager+XY.m in Sources */,
 				17C8543821D1F0C40007E864 /* MainViewController.m in Sources */,
+				1758D7B1221D573800D1F623 /* TKUserRegisterViewController.m in Sources */,
 				1750E71E21E5DDEF000601ED /* MainSlideViewController.m in Sources */,
+				1758D794221D4B7500D1F623 /* TKSqliteTools.m in Sources */,
+				1758D7A7221D533B00D1F623 /* TKDoLoginModel.m in Sources */,
 				17C8543521D1F0890007E864 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
