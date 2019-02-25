@@ -62,6 +62,14 @@
 		17E70FB02223952C0059F09A /* UIButton+TKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E70FAF2223952C0059F09A /* UIButton+TKButton.m */; };
 		17E70FB4222397590059F09A /* TKFindSetPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E70FB2222397590059F09A /* TKFindSetPassWordViewController.m */; };
 		17E70FB5222397590059F09A /* TKFindSetPassWordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E70FB3222397590059F09A /* TKFindSetPassWordViewController.xib */; };
+		17E70FB922239F010059F09A /* TKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E70FB722239F010059F09A /* TKWebViewController.m */; };
+		17E70FBA22239F010059F09A /* TKWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E70FB822239F010059F09A /* TKWebViewController.xib */; };
+		17E70FC02223A0DE0059F09A /* TKRegisterCodeNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E70FBE2223A0DE0059F09A /* TKRegisterCodeNewViewController.m */; };
+		17E70FC12223A0DE0059F09A /* TKRegisterCodeNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E70FBF2223A0DE0059F09A /* TKRegisterCodeNewViewController.xib */; };
+		17E70FC52223A17D0059F09A /* TKCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E70FC42223A17D0059F09A /* TKCodeView.m */; };
+		17E70FC82223A8B80059F09A /* NSString+TKString.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E70FC72223A8B80059F09A /* NSString+TKString.m */; };
+		17E70FCC2223AAF00059F09A /* TKRegisterSetPassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E70FCA2223AAF00059F09A /* TKRegisterSetPassViewController.m */; };
+		17E70FCD2223AAF00059F09A /* TKRegisterSetPassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E70FCB2223AAF00059F09A /* TKRegisterSetPassViewController.xib */; };
 		38DD62CC033636A40F3B176F /* libPods-tokeys-iOSUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2048611566E7C8AA0D24F7 /* libPods-tokeys-iOSUITests.a */; };
 		4D9202E99ABF91037FC8C85A /* libPods-tokeys-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6027EF55720A50F2636E9115 /* libPods-tokeys-iOS.a */; };
 		F96FBD06DCCE569D87ACBC3B /* libPods-tokeys-iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C19DE34743CF3B2005C7D85 /* libPods-tokeys-iOSTests.a */; };
@@ -187,6 +195,19 @@
 		17E70FB1222397590059F09A /* TKFindSetPassWordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKFindSetPassWordViewController.h; sourceTree = "<group>"; };
 		17E70FB2222397590059F09A /* TKFindSetPassWordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKFindSetPassWordViewController.m; sourceTree = "<group>"; };
 		17E70FB3222397590059F09A /* TKFindSetPassWordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKFindSetPassWordViewController.xib; sourceTree = "<group>"; };
+		17E70FB622239F010059F09A /* TKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKWebViewController.h; sourceTree = "<group>"; };
+		17E70FB722239F010059F09A /* TKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKWebViewController.m; sourceTree = "<group>"; };
+		17E70FB822239F010059F09A /* TKWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKWebViewController.xib; sourceTree = "<group>"; };
+		17E70FBD2223A0DE0059F09A /* TKRegisterCodeNewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKRegisterCodeNewViewController.h; sourceTree = "<group>"; };
+		17E70FBE2223A0DE0059F09A /* TKRegisterCodeNewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKRegisterCodeNewViewController.m; sourceTree = "<group>"; };
+		17E70FBF2223A0DE0059F09A /* TKRegisterCodeNewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKRegisterCodeNewViewController.xib; sourceTree = "<group>"; };
+		17E70FC32223A17D0059F09A /* TKCodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKCodeView.h; sourceTree = "<group>"; };
+		17E70FC42223A17D0059F09A /* TKCodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKCodeView.m; sourceTree = "<group>"; };
+		17E70FC62223A8B80059F09A /* NSString+TKString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TKString.h"; sourceTree = "<group>"; };
+		17E70FC72223A8B80059F09A /* NSString+TKString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TKString.m"; sourceTree = "<group>"; };
+		17E70FC92223AAF00059F09A /* TKRegisterSetPassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKRegisterSetPassViewController.h; sourceTree = "<group>"; };
+		17E70FCA2223AAF00059F09A /* TKRegisterSetPassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKRegisterSetPassViewController.m; sourceTree = "<group>"; };
+		17E70FCB2223AAF00059F09A /* TKRegisterSetPassViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKRegisterSetPassViewController.xib; sourceTree = "<group>"; };
 		3C19DE34743CF3B2005C7D85 /* libPods-tokeys-iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tokeys-iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4206CA234A6DC83285396625 /* Pods-tokeys-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tokeys-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-tokeys-iOSUITests/Pods-tokeys-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6027EF55720A50F2636E9115 /* libPods-tokeys-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tokeys-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -234,6 +255,8 @@
 				17205528221D4A200087FCCB /* UIButton+TouchAreaInsets.m */,
 				17E70FAE2223952C0059F09A /* UIButton+TKButton.h */,
 				17E70FAF2223952C0059F09A /* UIButton+TKButton.m */,
+				17E70FC62223A8B80059F09A /* NSString+TKString.h */,
+				17E70FC72223A8B80059F09A /* NSString+TKString.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -280,18 +303,8 @@
 				1750E74421E607BE000601ED /* TKUserLoginViewController.h */,
 				1750E74521E607BE000601ED /* TKUserLoginViewController.m */,
 				1750E74621E607BE000601ED /* TKUserLoginViewController.xib */,
-				1758D7AE221D573800D1F623 /* TKUserRegisterViewController.h */,
-				1758D7AF221D573800D1F623 /* TKUserRegisterViewController.m */,
-				1758D7B0221D573800D1F623 /* TKUserRegisterViewController.xib */,
-				1758D7B8221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.h */,
-				1758D7B9221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.m */,
-				1758D7BA221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.xib */,
-				17E70FA9222394290059F09A /* TKFindPassVerificationCodeViewController.h */,
-				17E70FAA222394290059F09A /* TKFindPassVerificationCodeViewController.m */,
-				17E70FAB222394290059F09A /* TKFindPassVerificationCodeViewController.xib */,
-				17E70FB1222397590059F09A /* TKFindSetPassWordViewController.h */,
-				17E70FB2222397590059F09A /* TKFindSetPassWordViewController.m */,
-				17E70FB3222397590059F09A /* TKFindSetPassWordViewController.xib */,
+				17E70FBB2223A09C0059F09A /* register */,
+				17E70FBC2223A0AE0059F09A /* findpass */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -514,8 +527,53 @@
 				17C8543B21D1F0DB0007E864 /* TKBaseViewController.m */,
 				1750E72521E5E17A000601ED /* TKNavigationController.h */,
 				1750E72621E5E17A000601ED /* TKNavigationController.m */,
+				17E70FB622239F010059F09A /* TKWebViewController.h */,
+				17E70FB722239F010059F09A /* TKWebViewController.m */,
+				17E70FB822239F010059F09A /* TKWebViewController.xib */,
 			);
 			path = Baae;
+			sourceTree = "<group>";
+		};
+		17E70FBB2223A09C0059F09A /* register */ = {
+			isa = PBXGroup;
+			children = (
+				17E70FC22223A16D0059F09A /* codeView */,
+				1758D7AE221D573800D1F623 /* TKUserRegisterViewController.h */,
+				1758D7AF221D573800D1F623 /* TKUserRegisterViewController.m */,
+				1758D7B0221D573800D1F623 /* TKUserRegisterViewController.xib */,
+				17E70FBD2223A0DE0059F09A /* TKRegisterCodeNewViewController.h */,
+				17E70FBE2223A0DE0059F09A /* TKRegisterCodeNewViewController.m */,
+				17E70FBF2223A0DE0059F09A /* TKRegisterCodeNewViewController.xib */,
+				17E70FC92223AAF00059F09A /* TKRegisterSetPassViewController.h */,
+				17E70FCA2223AAF00059F09A /* TKRegisterSetPassViewController.m */,
+				17E70FCB2223AAF00059F09A /* TKRegisterSetPassViewController.xib */,
+			);
+			path = register;
+			sourceTree = "<group>";
+		};
+		17E70FBC2223A0AE0059F09A /* findpass */ = {
+			isa = PBXGroup;
+			children = (
+				1758D7B8221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.h */,
+				1758D7B9221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.m */,
+				1758D7BA221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.xib */,
+				17E70FA9222394290059F09A /* TKFindPassVerificationCodeViewController.h */,
+				17E70FAA222394290059F09A /* TKFindPassVerificationCodeViewController.m */,
+				17E70FAB222394290059F09A /* TKFindPassVerificationCodeViewController.xib */,
+				17E70FB1222397590059F09A /* TKFindSetPassWordViewController.h */,
+				17E70FB2222397590059F09A /* TKFindSetPassWordViewController.m */,
+				17E70FB3222397590059F09A /* TKFindSetPassWordViewController.xib */,
+			);
+			path = findpass;
+			sourceTree = "<group>";
+		};
+		17E70FC22223A16D0059F09A /* codeView */ = {
+			isa = PBXGroup;
+			children = (
+				17E70FC32223A17D0059F09A /* TKCodeView.h */,
+				17E70FC42223A17D0059F09A /* TKCodeView.m */,
+			);
+			path = codeView;
 			sourceTree = "<group>";
 		};
 		780C6F8B3D469C22A62C9755 /* Frameworks */ = {
@@ -651,6 +709,7 @@
 			files = (
 				1758D7B2221D573800D1F623 /* TKUserRegisterViewController.xib in Resources */,
 				1750E72D21E5FDB0000601ED /* launch.png in Resources */,
+				17E70FBA22239F010059F09A /* TKWebViewController.xib in Resources */,
 				17C8540921D1E0D20007E864 /* LaunchScreen.storyboard in Resources */,
 				1758D7BC221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.xib in Resources */,
 				1750E74821E607BE000601ED /* TKUserLoginViewController.xib in Resources */,
@@ -658,8 +717,10 @@
 				17523E4221D1FE800066C82A /* TKContactsViewController.xib in Resources */,
 				17C8540421D1E0D00007E864 /* Main.storyboard in Resources */,
 				17E70FAD222394290059F09A /* TKFindPassVerificationCodeViewController.xib in Resources */,
+				17E70FCD2223AAF00059F09A /* TKRegisterSetPassViewController.xib in Resources */,
 				1750E72421E5DE74000601ED /* DrawerLeftViewController.xib in Resources */,
 				17523E3C21D1FE060066C82A /* TKChatListViewController.xib in Resources */,
+				17E70FC12223A0DE0059F09A /* TKRegisterCodeNewViewController.xib in Resources */,
 				1758D7C2221D57D900D1F623 /* TKAccountTVCell.xib in Resources */,
 				17E70FB5222397590059F09A /* TKFindSetPassWordViewController.xib in Resources */,
 				1750E71F21E5DDEF000601ED /* MainSlideViewController.xib in Resources */,
@@ -817,6 +878,8 @@
 				1750E72B21E5E3D5000601ED /* UIView+XYView.m in Sources */,
 				17C8543C21D1F0DB0007E864 /* TKBaseViewController.m in Sources */,
 				173A53D4222391B3008B9E8F /* TKJudgeSummary.m in Sources */,
+				17E70FC02223A0DE0059F09A /* TKRegisterCodeNewViewController.m in Sources */,
+				17E70FC82223A8B80059F09A /* NSString+TKString.m in Sources */,
 				17523E4121D1FE800066C82A /* TKContactsViewController.m in Sources */,
 				1750E73B21E60585000601ED /* TKUserRespose.m in Sources */,
 				1758D798221D4CFB00D1F623 /* TKHttpAction.m in Sources */,
@@ -831,6 +894,7 @@
 				1750E73521E6050D000601ED /* TKModel.m in Sources */,
 				1750E73821E6056F000601ED /* TKUser.m in Sources */,
 				17E70FB02223952C0059F09A /* UIButton+TKButton.m in Sources */,
+				17E70FC52223A17D0059F09A /* TKCodeView.m in Sources */,
 				17523E2D21D1F8480066C82A /* MainTouchScrollView.m in Sources */,
 				17E70FB4222397590059F09A /* TKFindSetPassWordViewController.m in Sources */,
 				17523E2A21D1F7E70066C82A /* MainTouchTableView.m in Sources */,
@@ -840,12 +904,14 @@
 				17523E3521D1FBF80066C82A /* TokeyViewTools.m in Sources */,
 				17E70FAC222394290059F09A /* TKFindPassVerificationCodeViewController.m in Sources */,
 				173A53D72223921E008B9E8F /* TKSMSAction.m in Sources */,
+				17E70FB922239F010059F09A /* TKWebViewController.m in Sources */,
 				17C853FE21D1E0D00007E864 /* AppDelegate.m in Sources */,
 				1750E72321E5DE74000601ED /* DrawerLeftViewController.m in Sources */,
 				1750E72721E5E17A000601ED /* TKNavigationController.m in Sources */,
 				1758D7AD221D554A00D1F623 /* TKHttpResposeModel.m in Sources */,
 				1758D79B221D4E4200D1F623 /* AFHTTPSessionManager+XY.m in Sources */,
 				17C8543821D1F0C40007E864 /* MainViewController.m in Sources */,
+				17E70FCC2223AAF00059F09A /* TKRegisterSetPassViewController.m in Sources */,
 				1758D7B1221D573800D1F623 /* TKUserRegisterViewController.m in Sources */,
 				1750E71E21E5DDEF000601ED /* MainSlideViewController.m in Sources */,
 				1758D794221D4B7500D1F623 /* TKSqliteTools.m in Sources */,

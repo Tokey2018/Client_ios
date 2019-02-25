@@ -26,7 +26,8 @@
     return url;
 }
 
--(void)request:(NSString *)urlString params:(id)params showHUD:(BOOL)showHUD resposeBlock:(void (^)(id, NSError *))block{
+-(void)request:(NSString *)urlString method:(TKHttpMethod)method params:(id)params showHUD:(BOOL)showHUD resposeBlock:(void (^)(id, NSError *))block{
+    
     Reachability *reachability = [Reachability reachabilityForInternetConnection];
     NetworkStatus status =  [reachability currentReachabilityStatus];
     if (status == NotReachable) {
@@ -47,10 +48,10 @@
         [SVProgressHUD show];
         [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeClear];
     }
-    [manager XY_POST:urlString parameters:params progress:^(NSProgress *downloadProgress) {
-        //这里可以获取进度
-    } respose:^(NSURLSessionDataTask *task, id  _Nullable responseObject, NSError *error) {
+    
+    void (^httpCallBolck)(NSURLSessionDataTask *, id  _Nullable responseObject, NSError *) = ^(NSURLSessionDataTask *task, id  _Nullable responseObject, NSError *error){
         
+        //NSLog(@"%@",string);
         if (showHUD) {
             [SVProgressHUD dismiss];
         }
@@ -75,11 +76,22 @@
                 [XYHUDCore showErrorWithStatus:@"服务器罢工啦,请稍后重试"];
             }
         }
-    }];
+    };
+    
+    if (method == TKHttpMethodGET) {
+        [manager XY_GET:urlString parameters:params progress:^(NSProgress *downloadProgress) {
+            //这里可以获取进度
+        } respose:httpCallBolck];
+    }else if (method == TKHttpMethodPOST){
+        [manager XY_POST:urlString parameters:params progress:^(NSProgress *downloadProgress) {
+            //这里可以获取进度
+        } respose:httpCallBolck];
+    }
 }
 
--(void)tokeys_request:(NSString *)urlString params:(id)params showHUD:(BOOL)showHUD resposeBlock:(void (^)(TKHttpResposeModel *, NSString *))block{
-    [self request:urlString params:params showHUD:showHUD resposeBlock:^(id responseObject, NSError *error) {
+-(void)tokeys_request:(NSString *)urlString method:(TKHttpMethod)method params:(id)params showHUD:(BOOL)showHUD resposeBlock:(void (^)(TKHttpResposeModel *, NSString *))block{
+    
+    [self request:urlString method:method params:params showHUD:showHUD resposeBlock:^(id responseObject, NSError *error) {
         if (responseObject!=nil) {
             TKHttpResposeModel *model = [[TKHttpResposeModel alloc] initWithDictionary:responseObject];
             if (model!=nil) {

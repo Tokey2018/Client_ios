@@ -11,10 +11,32 @@
 
 @interface TKUserAction : NSObject
 
+
++(void)register_save:(NSString*)phone
+                code:(NSString*)code
+            password:(NSString*)password
+           phoneBook:(NSArray*)phoneBook
+             respose:(void(^)(BOOL aSuccess,NSString*aMessage))callblock;
+
 +(void)userLogin:(NSString*)phone
         password:(NSString*)password
        phoneBook:(NSArray*)phoneBook
          respose:(void(^)(TKDoLoginModel*loginModel,NSString*aMessage))callblock;
 
+
+/**
+ 找回密码
+
+ @param phone <#phone description#>
+ @param code <#code description#>
+ @param password <#password description#>
+ @param confirmPass <#confirmPass description#>
+ @param callblock <#callblock description#>
+ */
++(void)findpass_setNewPass:(NSString*)phone
+                      code:(NSString*)code
+                  password:(NSString*)password
+               confirmPass:(NSString*)confirmPass
+                   respose:(void(^)(BOOL aSuccess,NSString*aMessage))callblock;
 @end
 

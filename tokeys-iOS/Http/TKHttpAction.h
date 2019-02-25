@@ -9,13 +9,26 @@
 #import <Foundation/Foundation.h>
 #import "TKHttpResposeModel.h"
 
+
+typedef NS_ENUM (NSInteger, TKHttpMethod)   {
+    
+    TKHttpMethodGET = 0,
+    
+    TKHttpMethodPOST = 1,
+    
+    TKHttpMethodPUT = 2,
+    
+    TKHttpMethodDELETE = 3
+    
+};
+
 @interface TKHttpAction : NSObject
 
 -(NSString *)getURL:(NSString *)add_url;
 
--(void)request:(NSString*)urlString params:(id)params showHUD:(BOOL)showHUD resposeBlock:(void(^)(id responseObject,NSError *error))block;
+-(void)request:(NSString*)urlString method:(TKHttpMethod)method params:(id)params showHUD:(BOOL)showHUD resposeBlock:(void(^)(id responseObject,NSError *error))block;
 
--(void)tokeys_request:(NSString*)urlString params:(id)params showHUD:(BOOL)showHUD resposeBlock:(void(^)(TKHttpResposeModel *response,NSString *aMessage))block;
+-(void)tokeys_request:(NSString*)urlString method:(TKHttpMethod)method params:(id)params showHUD:(BOOL)showHUD resposeBlock:(void(^)(TKHttpResposeModel *response,NSString *aMessage))block;
 
 @end
 

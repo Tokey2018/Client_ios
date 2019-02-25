@@ -11,6 +11,45 @@
 
 @implementation TKSMSAction
 
++ (void)sendSMSCode:(NSString *)phone respose:(void (^)(BOOL, NSString *))call{
+    TKHttpAction *action =  [[TKHttpAction alloc] init];
+    
+    NSMutableDictionary * parms = [NSMutableDictionary dictionary];
+    [parms setValue:phone  forKey:@"phone"];
+    
+    NSString *url = [action getURL:@"/reg/sendSMSCode"];
+    [action tokeys_request:url method:TKHttpMethodGET params:parms showHUD:YES resposeBlock:^(TKHttpResposeModel *response, NSString *aMessage) {
+        if (response==nil) {
+            call(NO,@"发送失败");
+        }else{
+            if (response.code==0) {
+                call(YES,@"发送成功");
+            }else{
+                call(NO,response.msg);
+            }
+        }
+    }];
+}
++ (void)verificatRegCode:(NSString *)phone code:(NSString *)code respose:(void (^)(BOOL, NSString *))call{
+    TKHttpAction *action =  [[TKHttpAction alloc] init];
+    
+    NSMutableDictionary * parms = [NSMutableDictionary dictionary];
+    [parms setValue:phone forKey:@"phone"];
+    [parms setValue:code forKey:@"code"];
+    
+    NSString *url = [action getURL:@"/reg/verificatRegCode"];
+    [action tokeys_request:url method:TKHttpMethodGET params:parms showHUD:YES resposeBlock:^(TKHttpResposeModel *response, NSString *aMessage) {
+        if (response==nil) {
+            call(NO,@"发送失败");
+        }else{
+            if (response.code==0) {
+                call(YES,@"发送成功");
+            }else{
+                call(NO,response.msg);
+            }
+        }
+    }];
+}
 
 +(void)findPassSMS:(NSString *)phone respose:(void (^)(BOOL, NSString *))call{
     TKHttpAction *action =  [[TKHttpAction alloc] init];
@@ -19,11 +58,15 @@
     [parms setValue:phone  forKey:@"phone"];
     
     NSString *url = [action getURL:@"/reg/findPassSMS"];
-    [action request:url params:parms showHUD:YES resposeBlock:^(id responseObject, NSError *error) {
-        if (error!=nil) {
+    [action tokeys_request:url method:TKHttpMethodGET params:parms showHUD:YES resposeBlock:^(TKHttpResposeModel *response, NSString *aMessage) {
+        if (response==nil) {
             call(NO,@"发送失败");
         }else{
-            call(YES,@"发送成功");
+            if (response.code==0) {
+                call(YES,@"发送成功");
+            }else{
+                call(NO,response.msg);
+            }
         }
     }];
 }
@@ -35,11 +78,15 @@
     [parms setValue:code forKey:@"code"];
     
     NSString *url = [action getURL:@"/reg/verificatPassCode"];
-    [action request:url params:parms showHUD:YES resposeBlock:^(id responseObject, NSError *error) {
-        if (error!=nil) {
-            call(NO,@"验证失败");
+    [action tokeys_request:url method:TKHttpMethodGET params:parms showHUD:YES resposeBlock:^(TKHttpResposeModel *response, NSString *aMessage) {
+        if (response==nil) {
+            call(NO,@"发送失败");
         }else{
-            call(YES,@"验证成功");
+            if (response.code==0) {
+                call(YES,@"发送成功");
+            }else{
+                call(NO,response.msg);
+            }
         }
     }];
         

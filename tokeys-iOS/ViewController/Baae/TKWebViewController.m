@@ -1,22 +1,29 @@
 //
-//  TKUserRegisterViewController.m
+//  TKWebViewController.m
 //  tokeys-iOS
 //
-//  Created by 杨卢银 on 2019/2/20.
+//  Created by 杨卢银 on 2019/2/25.
 //  Copyright © 2019 杨卢银. All rights reserved.
 //
 
-#import "TKUserRegisterViewController.h"
+#import "TKWebViewController.h"
 
-@interface TKUserRegisterViewController ()
+@interface TKWebViewController ()
+
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end
 
-@implementation TKUserRegisterViewController
+@implementation TKWebViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    if (_url) {
+        NSURL *r = [NSURL URLWithString:_url];
+        NSURLRequest *request = [NSURLRequest requestWithURL:r];
+        [_webView loadRequest:request];
+    }
 }
 
 /*
