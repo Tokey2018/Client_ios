@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import<CommonCrypto/CommonDigest.h>
+#import "TKJudgeSummary.h"
 
 /**
  颜色相关
