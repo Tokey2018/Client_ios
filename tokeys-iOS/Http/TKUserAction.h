@@ -21,7 +21,7 @@
 +(void)userLogin:(NSString*)phone
         password:(NSString*)password
        phoneBook:(NSArray*)phoneBook
-         respose:(void(^)(TKDoLoginModel*loginModel,NSString*aMessage))callblock;
+         respose:(void(^)(TKDoLoginModel*loginModel,NSString *yhsdLoginUrl,NSString*aMessage))callblock;
 
 
 /**

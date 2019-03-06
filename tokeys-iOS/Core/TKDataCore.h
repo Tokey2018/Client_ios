@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "TKUserRespose.h"
-
+#import "TKFriendModel.h"
 
 @interface TKDataCore : NSObject
 
@@ -17,6 +17,10 @@
 -(void)saveLoginUser:(TKUserRespose *)saveUser;
 
 -(TKUserRespose*)loginUser;
+
+-(NSArray<TKFriendModel*>*)getUserAllFriend;
+
+-(void)saveUserAllFriend:(NSArray*)friends;
 
 @end
 

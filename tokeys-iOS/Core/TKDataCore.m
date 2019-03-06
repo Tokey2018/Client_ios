@@ -9,6 +9,8 @@
 #import "TKDataCore.h"
 #import "TKFileManager.h"
 
+#define K_FRIEND_LIST        @"FILE/USER_FRIENDS.plist"
+
 @interface TKDataCore ()
 
 @property (strong , nonatomic) TKFileManager *fileManager;
@@ -58,6 +60,30 @@ static TKDataCore *__core;
     }
     TKUserRespose *u = [[TKUserRespose alloc] initWithDictionary:u_info];
     return u;
+}
+
+
+-(NSArray<TKFriendModel *> *)getUserAllFriend{
+    NSMutableDictionary *rootDic = [_fileManager getDictionary:K_FRIEND_LIST];
+    NSArray *array = [rootDic objectForKey:@"LIST"];
+    
+    NSMutableArray *friArr = [NSMutableArray array];
+    
+    if (array && array.count>0) {
+        
+        for(NSDictionary * diction in array){
+            
+            TKFriendModel * model = [[TKFriendModel alloc]initWithDictionary:diction];
+            
+            [friArr addObject:model];
+        }
+    }
+    return friArr;
+}
+-(void)saveUserAllFriend:(NSArray *)friends{
+    NSMutableDictionary *rootDic = [_fileManager getDictionary:K_FRIEND_LIST];
+    [rootDic setObject:friends forKey:@"LIST"];
+    [rootDic writeToFile:[_fileManager getPath:K_FRIEND_LIST] atomically:YES];
 }
 
 @end

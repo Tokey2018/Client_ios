@@ -18,6 +18,7 @@
 
 @property (strong , nonatomic) NSString *userGuid;
 
+-(void)autoLogin;
 
 @end
 

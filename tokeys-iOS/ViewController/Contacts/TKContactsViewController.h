@@ -6,9 +6,13 @@
 //  Copyright © 2018 杨卢银. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "TKParentClassScrollViewController.h"
 
-@interface TKContactsViewController : UIViewController
+
+/**
+ 联系人VC
+ */
+@interface TKContactsViewController : TKParentClassScrollViewController
 
 @end
 

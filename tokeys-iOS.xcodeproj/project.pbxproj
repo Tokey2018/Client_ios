@@ -7,9 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171CEC30222D2DBA00D26437 /* TKParentClassScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 171CEC2F222D2DBA00D26437 /* TKParentClassScrollViewController.m */; };
 		17205529221D4A200087FCCB /* UIButton+TouchAreaInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 17205528221D4A200087FCCB /* UIButton+TouchAreaInsets.m */; };
 		173A53D4222391B3008B9E8F /* TKJudgeSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 173A53D3222391B3008B9E8F /* TKJudgeSummary.m */; };
 		173A53D72223921E008B9E8F /* TKSMSAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 173A53D62223921E008B9E8F /* TKSMSAction.m */; };
+		1750AF57222FFBEC006C07A3 /* TKContactsAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750AF56222FFBEC006C07A3 /* TKContactsAction.m */; };
+		1750AF5B222FFCC5006C07A3 /* TKFriendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750AF5A222FFCC5006C07A3 /* TKFriendModel.m */; };
+		1750AF60222FFFE3006C07A3 /* TKRecentChatItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750AF5E222FFFE3006C07A3 /* TKRecentChatItemCell.m */; };
+		1750AF61222FFFE3006C07A3 /* TKRecentChatItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1750AF5F222FFFE3006C07A3 /* TKRecentChatItemCell.xib */; };
+		1750AF6522300116006C07A3 /* TKInvitationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1750AF6222300116006C07A3 /* TKInvitationTableViewCell.xib */; };
+		1750AF6622300116006C07A3 /* TKInvitationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750AF6322300116006C07A3 /* TKInvitationTableViewCell.m */; };
+		1750AF6A223004A7006C07A3 /* TKChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1750AF67223004A7006C07A3 /* TKChatTableViewCell.xib */; };
+		1750AF6B223004A7006C07A3 /* TKChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750AF69223004A7006C07A3 /* TKChatTableViewCell.m */; };
+		1750AF6F22300769006C07A3 /* TKChatInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750AF6D22300769006C07A3 /* TKChatInfoViewController.m */; };
+		1750AF7022300769006C07A3 /* TKChatInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1750AF6E22300769006C07A3 /* TKChatInfoViewController.xib */; };
 		1750E71E21E5DDEF000601ED /* MainSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750E71C21E5DDEF000601ED /* MainSlideViewController.m */; };
 		1750E71F21E5DDEF000601ED /* MainSlideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1750E71D21E5DDEF000601ED /* MainSlideViewController.xib */; };
 		1750E72321E5DE74000601ED /* DrawerLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750E72121E5DE74000601ED /* DrawerLeftViewController.m */; };
@@ -94,12 +105,30 @@
 
 /* Begin PBXFileReference section */
 		0AB9C1F9743648951FDF1C3C /* Pods-tokeys-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tokeys-iOS.release.xcconfig"; path = "Target Support Files/Pods-tokeys-iOS/Pods-tokeys-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		171CEC2E222D2DBA00D26437 /* TKParentClassScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKParentClassScrollViewController.h; sourceTree = "<group>"; };
+		171CEC2F222D2DBA00D26437 /* TKParentClassScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKParentClassScrollViewController.m; sourceTree = "<group>"; };
 		17205527221D4A200087FCCB /* UIButton+TouchAreaInsets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+TouchAreaInsets.h"; sourceTree = "<group>"; };
 		17205528221D4A200087FCCB /* UIButton+TouchAreaInsets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TouchAreaInsets.m"; sourceTree = "<group>"; };
 		173A53D2222391B3008B9E8F /* TKJudgeSummary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKJudgeSummary.h; sourceTree = "<group>"; };
 		173A53D3222391B3008B9E8F /* TKJudgeSummary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKJudgeSummary.m; sourceTree = "<group>"; };
 		173A53D52223921E008B9E8F /* TKSMSAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKSMSAction.h; sourceTree = "<group>"; };
 		173A53D62223921E008B9E8F /* TKSMSAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKSMSAction.m; sourceTree = "<group>"; };
+		1750AF55222FFBEC006C07A3 /* TKContactsAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKContactsAction.h; sourceTree = "<group>"; };
+		1750AF56222FFBEC006C07A3 /* TKContactsAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKContactsAction.m; sourceTree = "<group>"; };
+		1750AF59222FFCC5006C07A3 /* TKFriendModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKFriendModel.h; sourceTree = "<group>"; };
+		1750AF5A222FFCC5006C07A3 /* TKFriendModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKFriendModel.m; sourceTree = "<group>"; };
+		1750AF5D222FFFE3006C07A3 /* TKRecentChatItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKRecentChatItemCell.h; sourceTree = "<group>"; };
+		1750AF5E222FFFE3006C07A3 /* TKRecentChatItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKRecentChatItemCell.m; sourceTree = "<group>"; };
+		1750AF5F222FFFE3006C07A3 /* TKRecentChatItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKRecentChatItemCell.xib; sourceTree = "<group>"; };
+		1750AF6222300116006C07A3 /* TKInvitationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TKInvitationTableViewCell.xib; sourceTree = "<group>"; };
+		1750AF6322300116006C07A3 /* TKInvitationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKInvitationTableViewCell.m; sourceTree = "<group>"; };
+		1750AF6422300116006C07A3 /* TKInvitationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKInvitationTableViewCell.h; sourceTree = "<group>"; };
+		1750AF67223004A7006C07A3 /* TKChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TKChatTableViewCell.xib; sourceTree = "<group>"; };
+		1750AF68223004A7006C07A3 /* TKChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKChatTableViewCell.h; sourceTree = "<group>"; };
+		1750AF69223004A7006C07A3 /* TKChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKChatTableViewCell.m; sourceTree = "<group>"; };
+		1750AF6C22300769006C07A3 /* TKChatInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKChatInfoViewController.h; sourceTree = "<group>"; };
+		1750AF6D22300769006C07A3 /* TKChatInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKChatInfoViewController.m; sourceTree = "<group>"; };
+		1750AF6E22300769006C07A3 /* TKChatInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKChatInfoViewController.xib; sourceTree = "<group>"; };
 		1750E71B21E5DDEF000601ED /* MainSlideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainSlideViewController.h; sourceTree = "<group>"; };
 		1750E71C21E5DDEF000601ED /* MainSlideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainSlideViewController.m; sourceTree = "<group>"; };
 		1750E71D21E5DDEF000601ED /* MainSlideViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainSlideViewController.xib; sourceTree = "<group>"; };
@@ -246,6 +275,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1750AF58222FFCB2006C07A3 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				1750AF59222FFCC5006C07A3 /* TKFriendModel.h */,
+				1750AF5A222FFCC5006C07A3 /* TKFriendModel.m */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		1750AF5C222FFFC4006C07A3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1750AF5D222FFFE3006C07A3 /* TKRecentChatItemCell.h */,
+				1750AF5E222FFFE3006C07A3 /* TKRecentChatItemCell.m */,
+				1750AF5F222FFFE3006C07A3 /* TKRecentChatItemCell.xib */,
+				1750AF6422300116006C07A3 /* TKInvitationTableViewCell.h */,
+				1750AF6322300116006C07A3 /* TKInvitationTableViewCell.m */,
+				1750AF6222300116006C07A3 /* TKInvitationTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		1750E72821E5E38A000601ED /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,6 +405,9 @@
 				17523E3821D1FE060066C82A /* TKChatListViewController.h */,
 				17523E3921D1FE060066C82A /* TKChatListViewController.m */,
 				17523E3A21D1FE060066C82A /* TKChatListViewController.xib */,
+				1750AF6C22300769006C07A3 /* TKChatInfoViewController.h */,
+				1750AF6D22300769006C07A3 /* TKChatInfoViewController.m */,
+				1750AF6E22300769006C07A3 /* TKChatInfoViewController.xib */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -361,6 +415,9 @@
 		17523E3721D1FDE80066C82A /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				1750AF68223004A7006C07A3 /* TKChatTableViewCell.h */,
+				1750AF69223004A7006C07A3 /* TKChatTableViewCell.m */,
+				1750AF67223004A7006C07A3 /* TKChatTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -368,6 +425,7 @@
 		17523E3D21D1FE630066C82A /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
+				1750AF5C222FFFC4006C07A3 /* Cell */,
 				17523E3E21D1FE800066C82A /* TKContactsViewController.h */,
 				17523E3F21D1FE800066C82A /* TKContactsViewController.m */,
 				17523E4021D1FE800066C82A /* TKContactsViewController.xib */,
@@ -386,6 +444,8 @@
 				1758D7A3221D521500D1F623 /* TKUserAction.m */,
 				173A53D52223921E008B9E8F /* TKSMSAction.h */,
 				173A53D62223921E008B9E8F /* TKSMSAction.m */,
+				1750AF55222FFBEC006C07A3 /* TKContactsAction.h */,
+				1750AF56222FFBEC006C07A3 /* TKContactsAction.m */,
 			);
 			path = Http;
 			sourceTree = "<group>";
@@ -467,6 +527,7 @@
 			children = (
 				1750E73121E604EF000601ED /* Base */,
 				1750E73221E604FA000601ED /* User */,
+				1750AF58222FFCB2006C07A3 /* Contacts */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -530,6 +591,8 @@
 				17E70FB622239F010059F09A /* TKWebViewController.h */,
 				17E70FB722239F010059F09A /* TKWebViewController.m */,
 				17E70FB822239F010059F09A /* TKWebViewController.xib */,
+				171CEC2E222D2DBA00D26437 /* TKParentClassScrollViewController.h */,
+				171CEC2F222D2DBA00D26437 /* TKParentClassScrollViewController.m */,
 			);
 			path = Baae;
 			sourceTree = "<group>";
@@ -713,14 +776,18 @@
 				17C8540921D1E0D20007E864 /* LaunchScreen.storyboard in Resources */,
 				1758D7BC221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.xib in Resources */,
 				1750E74821E607BE000601ED /* TKUserLoginViewController.xib in Resources */,
+				1750AF7022300769006C07A3 /* TKChatInfoViewController.xib in Resources */,
 				17C8540621D1E0D20007E864 /* Assets.xcassets in Resources */,
 				17523E4221D1FE800066C82A /* TKContactsViewController.xib in Resources */,
 				17C8540421D1E0D00007E864 /* Main.storyboard in Resources */,
+				1750AF6522300116006C07A3 /* TKInvitationTableViewCell.xib in Resources */,
+				1750AF6A223004A7006C07A3 /* TKChatTableViewCell.xib in Resources */,
 				17E70FAD222394290059F09A /* TKFindPassVerificationCodeViewController.xib in Resources */,
 				17E70FCD2223AAF00059F09A /* TKRegisterSetPassViewController.xib in Resources */,
 				1750E72421E5DE74000601ED /* DrawerLeftViewController.xib in Resources */,
 				17523E3C21D1FE060066C82A /* TKChatListViewController.xib in Resources */,
 				17E70FC12223A0DE0059F09A /* TKRegisterCodeNewViewController.xib in Resources */,
+				1750AF61222FFFE3006C07A3 /* TKRecentChatItemCell.xib in Resources */,
 				1758D7C2221D57D900D1F623 /* TKAccountTVCell.xib in Resources */,
 				17E70FB5222397590059F09A /* TKFindSetPassWordViewController.xib in Resources */,
 				1750E71F21E5DDEF000601ED /* MainSlideViewController.xib in Resources */,
@@ -884,9 +951,13 @@
 				1750E73B21E60585000601ED /* TKUserRespose.m in Sources */,
 				1758D798221D4CFB00D1F623 /* TKHttpAction.m in Sources */,
 				1758D7A1221D509800D1F623 /* XYHUDCore.m in Sources */,
+				1750AF6622300116006C07A3 /* TKInvitationTableViewCell.m in Sources */,
 				1758D7C1221D57D900D1F623 /* TKAccountTVCell.m in Sources */,
+				1750AF5B222FFCC5006C07A3 /* TKFriendModel.m in Sources */,
 				1750E73E21E605EE000601ED /* TKDataCore.m in Sources */,
+				1750AF57222FFBEC006C07A3 /* TKContactsAction.m in Sources */,
 				1758D7A4221D521500D1F623 /* TKUserAction.m in Sources */,
+				1750AF60222FFFE3006C07A3 /* TKRecentChatItemCell.m in Sources */,
 				1750E73021E6046F000601ED /* TKCore.m in Sources */,
 				17205529221D4A200087FCCB /* UIButton+TouchAreaInsets.m in Sources */,
 				1758D7BB221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.m in Sources */,
@@ -902,10 +973,13 @@
 				17C8540C21D1E0D20007E864 /* main.m in Sources */,
 				17523E3B21D1FE060066C82A /* TKChatListViewController.m in Sources */,
 				17523E3521D1FBF80066C82A /* TokeyViewTools.m in Sources */,
+				1750AF6F22300769006C07A3 /* TKChatInfoViewController.m in Sources */,
 				17E70FAC222394290059F09A /* TKFindPassVerificationCodeViewController.m in Sources */,
 				173A53D72223921E008B9E8F /* TKSMSAction.m in Sources */,
 				17E70FB922239F010059F09A /* TKWebViewController.m in Sources */,
+				1750AF6B223004A7006C07A3 /* TKChatTableViewCell.m in Sources */,
 				17C853FE21D1E0D00007E864 /* AppDelegate.m in Sources */,
+				171CEC30222D2DBA00D26437 /* TKParentClassScrollViewController.m in Sources */,
 				1750E72321E5DE74000601ED /* DrawerLeftViewController.m in Sources */,
 				1750E72721E5E17A000601ED /* TKNavigationController.m in Sources */,
 				1758D7AD221D554A00D1F623 /* TKHttpResposeModel.m in Sources */,

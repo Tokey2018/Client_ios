@@ -13,9 +13,11 @@
 #import "UIButton+TouchAreaInsets.h"
 #import "TKSqliteTools.h"
 #import "TKUserAction.h"
+#import "TKUserSetting.h"
 #import "TKUserRegisterViewController.h"
 #import "TKUserFindPassVerifyPhoneViewController.h"
 #import "TKAccountTVCell.h"
+#import "MainSlideViewController.h"
 
 @interface TKUserLoginViewController ()<UITableViewDelegate,UITableViewDataSource>{
     UIImageView * _headImgView;
@@ -175,8 +177,49 @@
 -(void)loginAction:(NSMutableArray*)contactArr{
     
     
-    [TKUserAction userLogin:_phoneText.text password:_phoneText.text phoneBook:contactArr respose:^(TKDoLoginModel *loginModel, NSString *aMessage) {
+    [TKUserAction userLogin:_phoneText.text password:_passWordText.text phoneBook:contactArr respose:^(TKDoLoginModel *loginModel, NSString *yhsdLoginUrl, NSString *aMessage) {
         
+        if(loginModel!=nil){
+            
+            [TKUserSetting sharedManager].yhsdLoginUrl = yhsdLoginUrl;
+            
+            [TKUserSetting sharedManager].uid = loginModel.user.uid;
+            [TKUserSetting sharedManager].nick = loginModel.user.nick;
+            [TKUserSetting sharedManager].phone = self->_phoneText.text;
+            [TKUserSetting sharedManager].username = loginModel.user.accid;
+            [TKUserSetting sharedManager].password = loginModel.user.imToken;
+            [TKUserSetting sharedManager].token = loginModel.accessToken;
+            [TKUserSetting sharedManager].isLogined = YES;
+            [TKUserSetting sharedManager].userImg = loginModel.user.userImg;
+            [TKUserSetting sharedManager].backgroupImg = loginModel.user.backgroupImg;
+            [TKUserSetting sharedManager].roleCode = loginModel.user.roleCode;
+            [TKUserSetting sharedManager].agencyTids = loginModel.user.agencyTids;
+            [TKUserSetting sharedManager].auditStatus = loginModel.user.auditStatus;
+            [TKUserSetting sharedManager].voice = @"11";//系统声音默认开启;
+            [TKUserSetting sharedManager].shake = @"12";//系统震动默认开启;
+            
+            [[[NIMSDK sharedSDK] loginManager] login:loginModel.user.accid
+                                               token:loginModel.user.imToken
+                                          completion:^(NSError *error) {
+                                              if (error == nil)
+                                              { [XYHUDCore showSuccessWithStatus:@"登录成功"];
+                                                  if(![[TKSqliteTools sharedSqliteTools] isExistAppWithstring:self->_phoneText.text]){
+                                                      
+                                                      [[TKSqliteTools sharedSqliteTools] insertAppAccount:self->_phoneText.text andPass:self->_passWordText.text];
+                                                  }else{
+                                                      [[TKSqliteTools sharedSqliteTools] DeleteAppAccount:self->_phoneText.text];
+                                                      [[TKSqliteTools sharedSqliteTools] insertAppAccount:self->_phoneText.text andPass:self->_passWordText.text];
+                                                  }
+                                                  
+                                                  MainSlideViewController *mainVC = [[MainSlideViewController alloc] init];
+                                                  self.view.window.rootViewController = mainVC;
+                                              }
+                                              else
+                                              {
+                                                  [XYHUDCore showErrorWithStatus:@"登录失败"];
+                                              }
+                                          }];
+        }
     }];
     
 }

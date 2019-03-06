@@ -30,7 +30,7 @@
     }];
 }
 
-+(void)userLogin:(NSString *)phone password:(NSString *)password phoneBook:(NSArray *)phoneBook respose:(void (^)(TKDoLoginModel *, NSString *))callblock{
++(void)userLogin:(NSString *)phone password:(NSString *)password phoneBook:(NSArray *)phoneBook respose:(void (^)(TKDoLoginModel *, NSString *, NSString *))callblock{
 
     NSMutableDictionary * dict = [NSMutableDictionary dictionary];
     [dict setObject:phone forKey:@"phone"];
@@ -43,7 +43,18 @@
     TKHttpAction *action = [[TKHttpAction alloc] init];
     NSString *url = [action getURL:@"/login/doLogin"];
     [action tokeys_request:url method:TKHttpMethodPOST params:dict showHUD:YES resposeBlock:^(TKHttpResposeModel *response, NSString *aMessage) {
-        
+        if (response!=nil) {
+            if (response.code==0) {
+                TKDoLoginModel *model = [[TKDoLoginModel alloc] initWithDictionary:response.data];
+                callblock(model,response.yhsdLoginUrl,response.msg);
+                //加载URL
+                [action request:response.yhsdLoginUrl method:TKHttpMethodGET params:nil showHUD:NO resposeBlock:nil];
+            }else{
+                callblock(nil,nil,response.msg);
+            }
+        }else{
+            callblock(nil,nil,aMessage);
+        }
     }];
 }
 + (void)findpass_setNewPass:(NSString *)phone code:(NSString *)code password:(NSString *)password confirmPass:(NSString *)confirmPass respose:(void (^)(BOOL, NSString *))callblock{

@@ -13,7 +13,10 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 #import "TKCore.h"
+#import "TKDataCore.h"
 #import "TKMacros.h"
 #import "UIView+XYView.h"
-
+//聊天
+#import <NIMSDK/NIMSDK.h>
+#import <NIMAVChat/NIMAVChat.h>
 #endif /* tokeys_pch */

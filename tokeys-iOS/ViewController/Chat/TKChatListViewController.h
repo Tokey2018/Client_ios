@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-
+/**
+ *  会话列表
+ */
 @interface TKChatListViewController : UIViewController
 
 @end
