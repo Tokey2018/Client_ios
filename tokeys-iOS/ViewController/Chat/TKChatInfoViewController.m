@@ -20,6 +20,7 @@
 #import "TKGroupInfoViewController.h"
 #import "TKChatMessageCell.h"
 #import "TKUrlEditViewController.h"
+#import "TZImagePickerController.h"
 
 #import "NTESWhiteboardAttachment.h"
 #import "NTESGalleryViewController.h"
@@ -33,7 +34,7 @@
 
 #define K_SliderV_H 28.0
 
-@interface TKChatInfoViewController ()<NIMChatManagerDelegate,NIMNetCallManagerDelegate,UITableViewDataSource,UITableViewDelegate,UITextViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,NIMMediaManagerDelegate,XYRecordButtonMovesDeleagte>
+@interface TKChatInfoViewController ()<NIMChatManagerDelegate,NIMNetCallManagerDelegate,UITableViewDataSource,UITableViewDelegate,UITextViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,NIMMediaManagerDelegate,XYRecordButtonMovesDeleagte,CAAnimationDelegate,TZImagePickerControllerDelegate>
 {
     
     UIView *tabbarView;
@@ -51,10 +52,11 @@
 
 @property (nonatomic, weak) id<NIMInputActionDelegate> actionDelegate;
 @property (nonatomic, strong) NIMInputAudioRecordIndicatorView *audioRecordIndicator;
+
 @property(strong,nonatomic) NSMutableArray *picArray;
 @property (nonatomic, strong)UILabel * chatTimelabel;
 @property (nonatomic, strong)UIButton * xianbutton;
-@property (nonatomic,strong)UIButton * sendButton;
+@property (nonatomic, strong)UIButton * sendButton;
 @property (nonatomic, strong) YLYTextView *textView;
 
 @property (nonatomic,strong) UIImage * picima;
@@ -98,7 +100,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if(self){
         
-        [[[NIMSDK sharedSDK]chatManager] addDelegate:self];
+        [[[NIMSDK sharedSDK] chatManager] addDelegate:self];
         
     }
     
@@ -191,8 +193,7 @@
         self.sockeButton.frame = _recordbutton.frame;
         self.closeButton.frame = _recordbutton.frame;
         
-        //_recordbuttonBG.frame = CGRectMake(screen_width, 120, 0, 0);
-        //self.recordbuttonBG.frame = CGRectMake(screen_width-120, 0, 120*2, 120*2);
+        
         [_recordbuttonBG setRoundView];
         
         _sliderView.frame = CGRectMake(10, tabbarView.height - K_SliderV_H - 5, screen_width - 120 - K_SliderV_H, K_SliderV_H);
@@ -616,7 +617,10 @@
     //    imagePicker.delegate = self;
     //    imagePicker.allowsEditing = YES;
     //    imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-    
+    TZImagePickerController *imagePicker = [[TZImagePickerController alloc] initWithMaxImagesCount:9 columnNumber:4 delegate:self pushPhotoPickerVc:YES];
+    [self presentViewController:imagePicker animated:YES completion:^{
+        
+    }];
     
 //    whiteVideoViewController * white = [[whiteVideoViewController alloc] init];
 //    white.userID = self.userID;
@@ -884,13 +888,7 @@
     [tabbarView addSubview:videobutton];
     _phoneButton = videobutton;
     
-    //    UIButton * imagebutton = [UIButton buttonWithType:UIButtonTypeCustom];
-    //    imagebutton.frame = CGRectMake(videobutton.x - 35- pp, 7.5, 35, 35);
-    //    imagebutton.imageView.contentMode = UIViewContentModeScaleAspectFit;
-    //    [imagebutton setBackgroundImage:[UIImage imageNamed:@"tp_icon"] forState:UIControlStateNormal];
-    //    [imagebutton addTarget:self action:@selector(choosePhotoSelect:) forControlEvents:UIControlEventTouchUpInside];
-    //    [tabbarView addSubview:imagebutton];
-    //    _phoneButton = imagebutton;
+
     //输入框
     _textView = [[YLYTextView alloc]initWithFrame:CGRectMake(7.5, 7.5, _phoneButton.x-pp-10, 32)];
     _textView.placeholder = @"输入消息";
@@ -933,73 +931,7 @@
     pview.tag = 1102;
     [_sliderView addSubview:pview];
     
-    //按住说话
-    //    _anButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    //    _anButton.frame = CGRectMake(45, 2, screen_width-140, 40);
-    //    _anButton.layer.cornerRadius=18;
-    //    _anButton.clipsToBounds = YES;
-    //    _anButton.layer.borderWidth = 1;
-    //    _anButton.layer.borderColor = [backcolor CGColor];
-    //    [_anButton setTitle:@"按住说话" forState:UIControlStateNormal];
-    //    [_anButton setTitleColor:blcolor forState:UIControlStateNormal];
-    //    [tabbarView addSubview:_anButton];
-    //
-    //    _anButton.hidden = YES;
-    //    [_anButton addTarget:self action:@selector(onTouchRecordBtnDo:) forControlEvents:UIControlEventTouchDown];
-    //   // [_anButton addTarget:self action:@selector(onTouchRecordBtnDragInsi:) forControlEvents:UIControlEventTouchDragInside];
-    //    [_anButton addTarget:self action:@selector(onTouchRecordBtnDragOutsi:) forControlEvents:UIControlEventTouchDragOutside];
-    //    [_anButton addTarget:self action:@selector(onTouchRecordBtnUpInsi:) forControlEvents:UIControlEventTouchUpInside];
-    //    [_anButton addTarget:self action:@selector(onTouchRecordBtnUpOutsi:) forControlEvents:UIControlEventTouchUpOutside];
     
-    //录制语音
-    //    _recordbutton = [UIButton buttonWithType:UIButtonTypeCustom];
-    //    _recordbutton.frame = CGRectMake(screen_width-90, 5, 35, 35);
-    //    [_recordbutton setBackgroundImage:[UIImage imageNamed:@"语音聊天"] forState:UIControlStateNormal];
-    //    [_recordbutton setBackgroundImage:[UIImage imageNamed:@"键盘聊天"] forState:UIControlStateSelected];
-    //    [_recordbutton addTarget:self action:@selector(picButon) forControlEvents:UIControlEventTouchUpInside];
-    //    [tabbarView addSubview:_recordbutton];
-    
-    //键盘
-    //    _keyButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    //    _keyButton.frame = CGRectMake(screen_width-90,5, 35, 35);
-    //    // [picbutton setBackgroundColor:[UIColor greenColor]];
-    //    [_keyButton setBackgroundImage:[UIImage imageNamed:@"键盘聊天"] forState:UIControlStateNormal];
-    //    [_keyButton addTarget:self action:@selector(picButon) forControlEvents:UIControlEventTouchUpInside];
-    //    [tabbarView addSubview:_keyButton];
-    //    _keyButton.hidden = YES;
-    
-    
-    
-    
-    //时间
-    /*
-     _chatTimelabel = [[UILabel alloc]initWithFrame:CGRectMake(screen_width-50, screen_height-40, 36, 36)];
-     _chatTimelabel.backgroundColor = [UIColor redColor];
-     _chatTimelabel.userInteractionEnabled = YES;
-     UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapClick)];
-     [_chatTimelabel addGestureRecognizer:tap];
-     _chatTimelabel.layer.cornerRadius = 18;
-     _chatTimelabel.clipsToBounds = YES;
-     _chatTimelabel.textAlignment = NSTextAlignmentCenter;
-     _chatTimelabel.text = @"02:25";
-     _chatTimelabel.textColor = [UIColor whiteColor];
-     _chatTimelabel.font = [UIFont systemFontOfSize:12];
-     _chatTimelabel.hidden = YES;
-     [self.view addSubview:_chatTimelabel];
-     _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timeChange) userInfo:nil repeats:YES];
-     //[_timer fire];
-     [_timer setFireDate:[NSDate distantFuture]];
-     //闲
-     _xianbutton = [UIButton buttonWithType:UIButtonTypeCustom];
-     _xianbutton.frame = CGRectMake(screen_width-50, 5, 36, 36);
-     [_xianbutton setBackgroundColor:blcolor];
-     [_xianbutton setTitle:@"闲" forState:UIControlStateNormal];
-     _xianbutton.layer.cornerRadius = 18;
-     _xianbutton.clipsToBounds = YES;
-     _xianbutton.hidden = NO;
-     [_xianbutton addTarget:self action:@selector(xianButon) forControlEvents:UIControlEventTouchUpInside];
-     
-     */
     [tabbarView addSubview:_xianbutton];
     
     _sendButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -1429,10 +1361,19 @@
     NIMMessage *message = [[NIMMessage alloc] init];
     message.text = text;
     //构造会话
-    NIMSession *session = [NIMSession session:_userID type:self.type];
-    XYLog(@"%@,99999999%ld",_userID,self.type);
+    NIMSession  *session = [NIMSession session:_userID type:self.type];
+    XYLog(@"%@,------------> %ld",_userID,self.type);
+    
     //发送消息
-    [[NIMSDK sharedSDK].chatManager sendMessage:message toSession:session error:nil];
+    NSError *error;
+    [[NIMSDK sharedSDK].chatManager sendMessage:message toSession:session error:&error];
+    if (error==nil) {
+        XYLog(@"发送成功");
+    }else{
+        XYLog(@"发送失败");
+        XYLog(@"%@",error.description);
+    }
+
 }
 -(void)sendImageMessage:(UIImage*)image{
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -1484,7 +1425,14 @@
     //发送消息
     [[NIMSDK sharedSDK].chatManager sendMessage:message toSession:session error:nil];
 }
-#pragma makr LFImagePickerControllerDelegate
+#pragma makr TZImagePickerControllerDelegate
+-(void)imagePickerController:(TZImagePickerController *)picker didFinishPickingPhotos:(NSArray<UIImage *> *)photos sourceAssets:(NSArray *)assets isSelectOriginalPhoto:(BOOL)isSelectOriginalPhoto infos:(NSArray<NSDictionary *> *)infos{
+    if (photos && photos.count>0) {
+        for (UIImage *img in photos) {
+            [self sendImageMessage:img];
+        }
+    }
+}
 
 #pragma mark textViewDelegate
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
@@ -2181,39 +2129,9 @@
 
 
 #pragma mark - 发送消息成功回调
-- (void)sendMessage:(NIMMessage *)message
-didCompleteWithError:(NSError *)error{
+- (void)sendMessage:(NIMMessage *)message didCompleteWithError:(NSError *)error{
     NSLog(@"%@",message);
     
-    //    ChatItem *chatItem1=[[ChatItem alloc]init];
-    //    chatItem1.isByself = self;
-    //    chatItem1.content = [chatInfoViewController showTime:message.timestamp showDetail:YES];
-    //    [_dataArray addObject:chatItem1];
-    
-    //   if(_isCall == YES){
-    //        if(_numb==1){
-    //        NSDictionary *dict = @{NTESNotifyID :NTESCommandTyping,NTESCustomContent :NTESCustom};
-    //        NSData *data = [NSJSONSerialization dataWithJSONObject:dict
-    //                                                       options:0
-    //                                                         error:nil];
-    //        NSString *content = [[NSString alloc] initWithData:data
-    //                                                  encoding:NSUTF8StringEncoding];
-    //
-    //        NIMCustomSystemNotification *notification = [[NIMCustomSystemNotification alloc] initWithContent:content];
-    //        notification.apnsContent = [NSString stringWithFormat:@"%@发来了紧急呼叫",NTESCustom];
-    //        notification.sendToOnlineUsersOnly = NO;
-    //        NIMCustomSystemNotificationSetting *setting = [[NIMCustomSystemNotificationSetting alloc] init];
-    //        setting.apnsEnabled = YES;
-    //        notification.setting = setting;
-    //        notification.apnsPayload = dict;
-    //        notification.sendToOnlineUsersOnly = YES;
-    //        [[[NIMSDK sharedSDK] systemNotificationManager] sendCustomNotification:notification
-    //                                                                     toSession:message.session
-    //                                                            completion:nil];
-    //
-    //        }
-    //        _numb++;
-    //   }
     NSLog(@"发送状态%@",error);
     if(error!=nil){
         TKChatItem *chatItem=[[TKChatItem alloc]init];

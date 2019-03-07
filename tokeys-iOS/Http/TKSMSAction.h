@@ -37,5 +37,7 @@
 
 +(void)verificatPassCode:(NSString*)phone code:(NSString*)code respose:(void(^)(BOOL aSuccess,NSString *aMessage))call;
 
+
+
 @end
 

@@ -25,6 +25,8 @@ target 'tokeys-iOS' do
   pod 'SVProgressHUD'
   
   pod 'SDWebImage'
+  
+  pod 'FSActionSheet'
   pod 'TZImagePickerController'
   pod 'YNPageViewController'
   pod 'WMPageController', '~> 2.4.0' 

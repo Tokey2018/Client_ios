@@ -13,8 +13,8 @@
 @protocol DrawerLeftViewControllerDelegate <NSObject>
 
 @optional
-- (void)drawerLeftLJJVC:(DrawerLeftViewController*)drawerVC userHeaderClicked:(id)sender;
-- (void)drawerLeftLJJVC:(DrawerLeftViewController*)drawerVC appCenterClicked:(id)sender;
+- (void)drawerLeftViewController:(DrawerLeftViewController*)drawerVC userHeaderClicked:(id)sender;
+- (void)drawerLeftViewController:(DrawerLeftViewController*)drawerVC appCenterClicked:(id)sender;
 
 @end
 

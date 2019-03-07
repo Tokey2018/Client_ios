@@ -6,12 +6,12 @@
 //  Copyright © 2018 杨卢银. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "TKParentClassScrollViewController.h"
 
 /**
  *  会话列表
  */
-@interface TKChatListViewController : UIViewController
+@interface TKChatListViewController : TKParentClassScrollViewController
 
 @end
 

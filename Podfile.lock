@@ -26,6 +26,7 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - FSActionSheet (1.0.1)
   - IQKeyboardManager (6.2.0)
   - LYEmptyView (1.2.3)
   - M80AttributedLabel (1.6.3)
@@ -82,6 +83,7 @@ DEPENDENCIES:
   - Crashlytics
   - Fabric
   - FMDB
+  - FSActionSheet
   - IQKeyboardManager
   - LYEmptyView
   - M80AttributedLabel (~> 1.6.3)
@@ -112,6 +114,7 @@ SPEC REPOS:
     - Crashlytics
     - Fabric
     - FMDB
+    - FSActionSheet
     - IQKeyboardManager
     - LYEmptyView
     - M80AttributedLabel
@@ -145,6 +148,7 @@ SPEC CHECKSUMS:
   Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
   Fabric: f988e33c97f08930a413e08123064d2e5f68d655
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  FSActionSheet: 69539289555a515c9cba29a00c91fa3d5d3901aa
   IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
   LYEmptyView: ea5827f3f81fcbec427f990005501991477bdae8
   M80AttributedLabel: d06543195d3e451d2ea62ad76d04aa9cea7661d4
@@ -172,6 +176,6 @@ SPEC CHECKSUMS:
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: 07d4463f57a69f63de7e81930f2d0db3d48dfacf
+PODFILE CHECKSUM: 3a411043db0f06fb599e23615b4816a886d01217
 
 COCOAPODS: 1.6.0.beta.1

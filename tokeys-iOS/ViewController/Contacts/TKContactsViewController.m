@@ -443,24 +443,24 @@ NIMUserManagerDelegate,UIAlertViewDelegate,TKChatTableViewCellDelegate>
         }else{
             user = _dataOther[indexPath.row];
         }
-//        chatInfo.userID = user.teamId;
-//        chatInfo.type = 1;
-//
-//        NSString * title = [NSString stringWithFormat:@"%@(%zd人)",[user teamName],[user memberNumber]];
-//        chatInfo.nameStr =title;
-//
-//        NIMSession *session = [NIMSession session:user.teamId type:NIMSessionTypeTeam];
-//        chatInfo.session = session;
+        chatInfo.userID = user.teamId;
+        chatInfo.type = 1;
+
+        NSString * title = [NSString stringWithFormat:@"%@(%zd人)",[user teamName],[user memberNumber]];
+        chatInfo.nameStr =title;
+
+        NIMSession *session = [NIMSession session:user.teamId type:NIMSessionTypeTeam];
+        chatInfo.session = session;
         [self.navigationController pushViewController:chatInfo animated:YES];
         
     }else if(indexPath.section==4){
         TKChatInfoViewController * chatInfo = [[TKChatInfoViewController alloc]init];
-//        myFriendModel * user = [[myFriendModel alloc]init];
-//        user = _friArr[indexPath.row];
-//        chatInfo.userID =user.accid;
-//        chatInfo.nameStr = user.nick;
-//        NIMSession *session = [NIMSession session:user.accid type:NIMSessionTypeP2P];
-//        chatInfo.session = session;
+        TKFriendModel * user = [[TKFriendModel alloc]init];
+        user = _friArr[indexPath.row];
+        chatInfo.userID =user.accid;
+        chatInfo.nameStr = user.nick;
+        NIMSession *session = [NIMSession session:user.accid type:NIMSessionTypeP2P];
+        chatInfo.session = session;
         [self.navigationController pushViewController:chatInfo animated:YES];
         
     }

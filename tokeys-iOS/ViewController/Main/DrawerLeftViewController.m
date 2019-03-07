@@ -8,6 +8,7 @@
 
 #import "DrawerLeftViewController.h"
 #import "UIViewController+MMDrawerController.h"
+#import "TKPersonDataViewController.h"
 
 @interface DrawerLeftViewController ()
 
@@ -82,13 +83,13 @@
 -(void)headClick{
     
     if (self.delegate) {
-        [self.delegate drawerLeftLJJVC:self userHeaderClicked:nil];
+        [self.delegate drawerLeftViewController:self userHeaderClicked:nil];
     }
     
-    //    personDataViewController * person = [[personDataViewController alloc]init];
-    //    person.isJump = YES;
-    //    //[self setViewController:person];
-    //    [self.rootViewController.navigationController pushViewController:person animated:YES];
+//    TKPersonDataViewController * person = [[TKPersonDataViewController alloc]init];
+//    person.isJump = YES;
+//    //[self setViewController:person];
+//    [self.rootViewController.navigationController pushViewController:person animated:YES];
 }
 
 - (void)setViewController:(UIViewController *)viewController{

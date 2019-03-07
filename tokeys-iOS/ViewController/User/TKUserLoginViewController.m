@@ -200,9 +200,11 @@
             
             [[[NIMSDK sharedSDK] loginManager] login:loginModel.user.accid
                                                token:loginModel.user.imToken
-                                          completion:^(NSError *error) {
-                                              if (error == nil)
-                                              { [XYHUDCore showSuccessWithStatus:@"登录成功"];
+                                          completion:^(NSError * _Nullable error) {
+                                              if (error == nil){
+                                                  
+                                                  [XYHUDCore showSuccessWithStatus:@"登录成功"];
+                                                  
                                                   if(![[TKSqliteTools sharedSqliteTools] isExistAppWithstring:self->_phoneText.text]){
                                                       
                                                       [[TKSqliteTools sharedSqliteTools] insertAppAccount:self->_phoneText.text andPass:self->_passWordText.text];
@@ -213,9 +215,7 @@
                                                   
                                                   MainSlideViewController *mainVC = [[MainSlideViewController alloc] init];
                                                   self.view.window.rootViewController = mainVC;
-                                              }
-                                              else
-                                              {
+                                              }else {
                                                   [XYHUDCore showErrorWithStatus:@"登录失败"];
                                               }
                                           }];

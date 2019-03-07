@@ -14,6 +14,7 @@
 #ifdef __OBJC__
 
 #import "TKCore.h"
+#import "TKUserSetting.h"
 #import "TKDataCore.h"
 #import "TKMacros.h"
 #import "UIView+XYView.h"

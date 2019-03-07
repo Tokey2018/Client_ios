@@ -68,7 +68,7 @@
                         <color key="textColor" red="0.76470588240000004" green="0.76470588240000004" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="头像" translatesAutoresizingMaskIntoConstraints="NO" id="9r0-0k-r3D">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User" translatesAutoresizingMaskIntoConstraints="NO" id="9r0-0k-r3D">
                         <rect key="frame" x="16" y="10" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="EIW-eT-CR6"/>
@@ -161,7 +161,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="头像" width="77" height="77"/>
+        <image name="User" width="68" height="68"/>
         <image name="文档" width="62" height="60"/>
     </resources>
 </document>

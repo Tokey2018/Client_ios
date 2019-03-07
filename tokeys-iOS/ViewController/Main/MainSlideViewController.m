@@ -11,6 +11,7 @@
 #import "DrawerLeftViewController.h"
 #import "TKNavigationController.h"
 #import "WRNavigationBar.h"
+#import "TKPersonDataViewController.h"
 
 typedef enum State {
     kStateHome,
@@ -67,7 +68,7 @@ static const CGFloat menuStartNarrowRatio  = 0.70;
     
     // 设置menu的view
     self.menuVC = [[DrawerLeftViewController alloc] init];
-    //self.menuVC.delegate = self;
+    self.menuVC.delegate = self;
     self.menuVC.view.frame = [[UIScreen mainScreen] bounds];
     self.menuVC.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, menuStartNarrowRatio, menuStartNarrowRatio);
     self.menuVC.view.center = CGPointMake(self.menuCenterXStart, self.menuVC.view.center.y);
@@ -210,12 +211,14 @@ static const CGFloat menuStartNarrowRatio  = 0.70;
     [self showHome];
 }
 #pragma mark DrawerLeftViewContrllerDeleagate
--(void)drawerLeftLJJVC:(DrawerLeftViewController *)drawerVC appCenterClicked:(id)sender{
+-(void)drawerLeftViewController:(DrawerLeftViewController *)drawerVC appCenterClicked:(id)sender{
     
 }
--(void)drawerLeftLJJVC:(DrawerLeftViewController *)drawerVC userHeaderClicked:(id)sender{
+-(void)drawerLeftViewController:(DrawerLeftViewController *)drawerVC userHeaderClicked:(id)sender{
     [self showHome];
-    
+    TKPersonDataViewController * person = [[TKPersonDataViewController alloc]init];
+    person.isJump = YES;
+    [self.messageNav pushViewController:person animated:YES];
 }
 #pragma mark - WMMenuViewController代理方法
 - (void)didSelectItem:(NSString *)title {

@@ -11,6 +11,27 @@
 		17205529221D4A200087FCCB /* UIButton+TouchAreaInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 17205528221D4A200087FCCB /* UIButton+TouchAreaInsets.m */; };
 		173A53D4222391B3008B9E8F /* TKJudgeSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 173A53D3222391B3008B9E8F /* TKJudgeSummary.m */; };
 		173A53D72223921E008B9E8F /* TKSMSAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 173A53D62223921E008B9E8F /* TKSMSAction.m */; };
+		175027222231012F00B0EDFD /* TKSystemNotiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 175027202231012F00B0EDFD /* TKSystemNotiViewController.m */; };
+		175027232231012F00B0EDFD /* TKSystemNotiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 175027212231012F00B0EDFD /* TKSystemNotiViewController.xib */; };
+		175027272231024400B0EDFD /* TKPersonDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 175027252231024400B0EDFD /* TKPersonDataViewController.m */; };
+		175027282231024400B0EDFD /* TKPersonDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 175027262231024400B0EDFD /* TKPersonDataViewController.xib */; };
+		1750272B223102C800B0EDFD /* TKMessageAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750272A223102C800B0EDFD /* TKMessageAlert.m */; };
+		175027302231087600B0EDFD /* TKMineInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750272E2231087600B0EDFD /* TKMineInfoTableViewController.m */; };
+		175027312231087600B0EDFD /* TKMineInfoTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1750272F2231087600B0EDFD /* TKMineInfoTableViewController.xib */; };
+		175027362231092900B0EDFD /* TKGroupHeadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 175027342231092900B0EDFD /* TKGroupHeadTableViewCell.m */; };
+		175027372231092900B0EDFD /* TKGroupHeadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 175027352231092900B0EDFD /* TKGroupHeadTableViewCell.xib */; };
+		1750273B22310C6E00B0EDFD /* TKMineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750273922310C6E00B0EDFD /* TKMineCell.m */; };
+		1750273C22310C6E00B0EDFD /* TKMineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1750273A22310C6E00B0EDFD /* TKMineCell.xib */; };
+		1750274022310CFE00B0EDFD /* TKNotiSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750273E22310CFE00B0EDFD /* TKNotiSetTableViewCell.m */; };
+		1750274122310CFE00B0EDFD /* TKNotiSetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1750273F22310CFE00B0EDFD /* TKNotiSetTableViewCell.xib */; };
+		175027452231108A00B0EDFD /* TKRregistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 175027422231108A00B0EDFD /* TKRregistViewController.xib */; };
+		175027462231108A00B0EDFD /* TKRegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 175027442231108A00B0EDFD /* TKRegistViewController.m */; };
+		1750274A223113C300B0EDFD /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17502747223113C100B0EDFD /* AuthenticationViewController.xib */; };
+		1750274B223113C300B0EDFD /* AuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17502749223113C200B0EDFD /* AuthenticationViewController.m */; };
+		175027522231141900B0EDFD /* AuthenticationSurgeonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1750274C2231141700B0EDFD /* AuthenticationSurgeonViewController.xib */; };
+		175027532231141900B0EDFD /* AuthenticationDoctorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750274E2231141800B0EDFD /* AuthenticationDoctorViewController.m */; };
+		175027542231141900B0EDFD /* AuthenticationDoctorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1750274F2231141800B0EDFD /* AuthenticationDoctorViewController.xib */; };
+		175027552231141900B0EDFD /* AuthenticationSurgeonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 175027512231141800B0EDFD /* AuthenticationSurgeonViewController.m */; };
 		1750AF57222FFBEC006C07A3 /* TKContactsAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750AF56222FFBEC006C07A3 /* TKContactsAction.m */; };
 		1750AF5B222FFCC5006C07A3 /* TKFriendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750AF5A222FFCC5006C07A3 /* TKFriendModel.m */; };
 		1750AF60222FFFE3006C07A3 /* TKRecentChatItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1750AF5E222FFFE3006C07A3 /* TKRecentChatItemCell.m */; };
@@ -520,6 +541,38 @@
 		173A53D3222391B3008B9E8F /* TKJudgeSummary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKJudgeSummary.m; sourceTree = "<group>"; };
 		173A53D52223921E008B9E8F /* TKSMSAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKSMSAction.h; sourceTree = "<group>"; };
 		173A53D62223921E008B9E8F /* TKSMSAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKSMSAction.m; sourceTree = "<group>"; };
+		1750271F2231012F00B0EDFD /* TKSystemNotiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKSystemNotiViewController.h; sourceTree = "<group>"; };
+		175027202231012F00B0EDFD /* TKSystemNotiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKSystemNotiViewController.m; sourceTree = "<group>"; };
+		175027212231012F00B0EDFD /* TKSystemNotiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKSystemNotiViewController.xib; sourceTree = "<group>"; };
+		175027242231024400B0EDFD /* TKPersonDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKPersonDataViewController.h; sourceTree = "<group>"; };
+		175027252231024400B0EDFD /* TKPersonDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKPersonDataViewController.m; sourceTree = "<group>"; };
+		175027262231024400B0EDFD /* TKPersonDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKPersonDataViewController.xib; sourceTree = "<group>"; };
+		17502729223102C800B0EDFD /* TKMessageAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKMessageAlert.h; sourceTree = "<group>"; };
+		1750272A223102C800B0EDFD /* TKMessageAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKMessageAlert.m; sourceTree = "<group>"; };
+		1750272D2231087600B0EDFD /* TKMineInfoTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKMineInfoTableViewController.h; sourceTree = "<group>"; };
+		1750272E2231087600B0EDFD /* TKMineInfoTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKMineInfoTableViewController.m; sourceTree = "<group>"; };
+		1750272F2231087600B0EDFD /* TKMineInfoTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKMineInfoTableViewController.xib; sourceTree = "<group>"; };
+		175027332231092900B0EDFD /* TKGroupHeadTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKGroupHeadTableViewCell.h; sourceTree = "<group>"; };
+		175027342231092900B0EDFD /* TKGroupHeadTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKGroupHeadTableViewCell.m; sourceTree = "<group>"; };
+		175027352231092900B0EDFD /* TKGroupHeadTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKGroupHeadTableViewCell.xib; sourceTree = "<group>"; };
+		1750273822310C6E00B0EDFD /* TKMineCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKMineCell.h; sourceTree = "<group>"; };
+		1750273922310C6E00B0EDFD /* TKMineCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKMineCell.m; sourceTree = "<group>"; };
+		1750273A22310C6E00B0EDFD /* TKMineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKMineCell.xib; sourceTree = "<group>"; };
+		1750273D22310CFE00B0EDFD /* TKNotiSetTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKNotiSetTableViewCell.h; sourceTree = "<group>"; };
+		1750273E22310CFE00B0EDFD /* TKNotiSetTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKNotiSetTableViewCell.m; sourceTree = "<group>"; };
+		1750273F22310CFE00B0EDFD /* TKNotiSetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TKNotiSetTableViewCell.xib; sourceTree = "<group>"; };
+		175027422231108A00B0EDFD /* TKRregistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TKRregistViewController.xib; sourceTree = "<group>"; };
+		175027432231108A00B0EDFD /* TKRegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKRegistViewController.h; sourceTree = "<group>"; };
+		175027442231108A00B0EDFD /* TKRegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKRegistViewController.m; sourceTree = "<group>"; };
+		17502747223113C100B0EDFD /* AuthenticationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthenticationViewController.xib; sourceTree = "<group>"; };
+		17502748223113C200B0EDFD /* AuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationViewController.h; sourceTree = "<group>"; };
+		17502749223113C200B0EDFD /* AuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationViewController.m; sourceTree = "<group>"; };
+		1750274C2231141700B0EDFD /* AuthenticationSurgeonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthenticationSurgeonViewController.xib; sourceTree = "<group>"; };
+		1750274D2231141700B0EDFD /* AuthenticationDoctorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationDoctorViewController.h; sourceTree = "<group>"; };
+		1750274E2231141800B0EDFD /* AuthenticationDoctorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationDoctorViewController.m; sourceTree = "<group>"; };
+		1750274F2231141800B0EDFD /* AuthenticationDoctorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthenticationDoctorViewController.xib; sourceTree = "<group>"; };
+		175027502231141800B0EDFD /* AuthenticationSurgeonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationSurgeonViewController.h; sourceTree = "<group>"; };
+		175027512231141800B0EDFD /* AuthenticationSurgeonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationSurgeonViewController.m; sourceTree = "<group>"; };
 		1750AF55222FFBEC006C07A3 /* TKContactsAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKContactsAction.h; sourceTree = "<group>"; };
 		1750AF56222FFBEC006C07A3 /* TKContactsAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKContactsAction.m; sourceTree = "<group>"; };
 		1750AF59222FFCC5006C07A3 /* TKFriendModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKFriendModel.h; sourceTree = "<group>"; };
@@ -1493,6 +1546,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1750271E2231011A00B0EDFD /* other */ = {
+			isa = PBXGroup;
+			children = (
+				1750271F2231012F00B0EDFD /* TKSystemNotiViewController.h */,
+				175027202231012F00B0EDFD /* TKSystemNotiViewController.m */,
+				175027212231012F00B0EDFD /* TKSystemNotiViewController.xib */,
+				17502748223113C200B0EDFD /* AuthenticationViewController.h */,
+				17502749223113C200B0EDFD /* AuthenticationViewController.m */,
+				17502747223113C100B0EDFD /* AuthenticationViewController.xib */,
+				1750274D2231141700B0EDFD /* AuthenticationDoctorViewController.h */,
+				1750274E2231141800B0EDFD /* AuthenticationDoctorViewController.m */,
+				1750274F2231141800B0EDFD /* AuthenticationDoctorViewController.xib */,
+				175027502231141800B0EDFD /* AuthenticationSurgeonViewController.h */,
+				175027512231141800B0EDFD /* AuthenticationSurgeonViewController.m */,
+				1750274C2231141700B0EDFD /* AuthenticationSurgeonViewController.xib */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		1750272C2231083000B0EDFD /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				175027322231091200B0EDFD /* Cell */,
+				175027242231024400B0EDFD /* TKPersonDataViewController.h */,
+				175027252231024400B0EDFD /* TKPersonDataViewController.m */,
+				175027262231024400B0EDFD /* TKPersonDataViewController.xib */,
+				1750272D2231087600B0EDFD /* TKMineInfoTableViewController.h */,
+				1750272E2231087600B0EDFD /* TKMineInfoTableViewController.m */,
+				1750272F2231087600B0EDFD /* TKMineInfoTableViewController.xib */,
+				175027432231108A00B0EDFD /* TKRegistViewController.h */,
+				175027442231108A00B0EDFD /* TKRegistViewController.m */,
+				175027422231108A00B0EDFD /* TKRregistViewController.xib */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		175027322231091200B0EDFD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				175027332231092900B0EDFD /* TKGroupHeadTableViewCell.h */,
+				175027342231092900B0EDFD /* TKGroupHeadTableViewCell.m */,
+				175027352231092900B0EDFD /* TKGroupHeadTableViewCell.xib */,
+				1750273822310C6E00B0EDFD /* TKMineCell.h */,
+				1750273922310C6E00B0EDFD /* TKMineCell.m */,
+				1750273A22310C6E00B0EDFD /* TKMineCell.xib */,
+				1750273D22310CFE00B0EDFD /* TKNotiSetTableViewCell.h */,
+				1750273E22310CFE00B0EDFD /* TKNotiSetTableViewCell.m */,
+				1750273F22310CFE00B0EDFD /* TKNotiSetTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		1750AF58222FFCB2006C07A3 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
@@ -3285,11 +3390,11 @@
 			isa = PBXGroup;
 			children = (
 				1758D7BD221D57BD00D1F623 /* Cell */,
+				17E70FBB2223A09C0059F09A /* register */,
+				17E70FBC2223A0AE0059F09A /* findpass */,
 				1750E74421E607BE000601ED /* TKUserLoginViewController.h */,
 				1750E74521E607BE000601ED /* TKUserLoginViewController.m */,
 				1750E74621E607BE000601ED /* TKUserLoginViewController.xib */,
-				17E70FBB2223A09C0059F09A /* register */,
-				17E70FBC2223A0AE0059F09A /* findpass */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -3329,6 +3434,8 @@
 				1758D7A0221D509800D1F623 /* XYHUDCore.m */,
 				173A53D2222391B3008B9E8F /* TKJudgeSummary.h */,
 				173A53D3222391B3008B9E8F /* TKJudgeSummary.m */,
+				17502729223102C800B0EDFD /* TKMessageAlert.h */,
+				1750272A223102C800B0EDFD /* TKMessageAlert.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -3490,6 +3597,8 @@
 				1750E74321E60796000601ED /* User */,
 				17523E3621D1FDDE0066C82A /* Chat */,
 				17523E3D21D1FE630066C82A /* Contacts */,
+				1750272C2231083000B0EDFD /* Mine */,
+				1750271E2231011A00B0EDFD /* other */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -3743,19 +3852,25 @@
 				1750E72D21E5FDB0000601ED /* launch.png in Resources */,
 				1750BCD62230DA44006C07A3 /* BlizzardReg.ttf in Resources */,
 				17E70FBA22239F010059F09A /* TKWebViewController.xib in Resources */,
+				1750273C22310C6E00B0EDFD /* TKMineCell.xib in Resources */,
 				1750BCD92230DA44006C07A3 /* NIMKitEmoticon.bundle in Resources */,
 				1750BC5E2230C77E006C07A3 /* WalletResource.bundle in Resources */,
 				1750BC752230C92A006C07A3 /* TKGroupInfoViewController.xib in Resources */,
 				1750BCE12230DA44006C07A3 /* video_chat_tip_receiver.aac in Resources */,
+				1750274A223113C300B0EDFD /* AuthenticationViewController.xib in Resources */,
 				1750BCD52230DA44006C07A3 /* icon_meeting_connecting@2x.gif in Resources */,
 				1750BC582230C77E006C07A3 /* AlipaySDK.bundle in Resources */,
 				1750BB412230C415006C07A3 /* NTESLogViewController.xib in Resources */,
+				1750274122310CFE00B0EDFD /* TKNotiSetTableViewCell.xib in Resources */,
 				17C8540921D1E0D20007E864 /* LaunchScreen.storyboard in Resources */,
+				175027232231012F00B0EDFD /* TKSystemNotiViewController.xib in Resources */,
 				1750BB952230C415006C07A3 /* NTESTeamMeetingCallingViewController.xib in Resources */,
 				1750BB002230C415006C07A3 /* NTESJionTeamViewController.xib in Resources */,
 				1758D7BC221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.xib in Resources */,
+				175027522231141900B0EDFD /* AuthenticationSurgeonViewController.xib in Resources */,
 				1750BCE32230DA44006C07A3 /* video_chat_push.mp3 in Resources */,
 				1750BB0B2230C415006C07A3 /* NTESSystemNotificationViewController.xib in Resources */,
+				175027452231108A00B0EDFD /* TKRregistViewController.xib in Resources */,
 				1750E74821E607BE000601ED /* TKUserLoginViewController.xib in Resources */,
 				1750BB362230C415006C07A3 /* NTESNoDisturbSettingViewController.xib in Resources */,
 				1750AF7022300769006C07A3 /* TKChatInfoViewController.xib in Resources */,
@@ -3765,6 +3880,7 @@
 				1750BCDD2230DA44006C07A3 /* video_chat_tip_OnCall.aac in Resources */,
 				1750BB682230C415006C07A3 /* NTESGalleryViewController.xib in Resources */,
 				1750BB602230C415006C07A3 /* NTESWhiteboardViewController.xib in Resources */,
+				175027372231092900B0EDFD /* TKGroupHeadTableViewCell.xib in Resources */,
 				1750BCDB2230DA44006C07A3 /* NIMKitResource.bundle in Resources */,
 				17C8540621D1E0D20007E864 /* Assets.xcassets in Resources */,
 				17523E4221D1FE800066C82A /* TKContactsViewController.xib in Resources */,
@@ -3802,13 +3918,16 @@
 				1750BB9C2230C415006C07A3 /* NTESTeamReceiptDetailViewController.xib in Resources */,
 				1750BCDE2230DA44006C07A3 /* video_chat_tip_sender.aac in Resources */,
 				1758D7C2221D57D900D1F623 /* TKAccountTVCell.xib in Resources */,
+				175027542231141900B0EDFD /* AuthenticationDoctorViewController.xib in Resources */,
 				1750BB302230C415006C07A3 /* NTESUserInfoSettingViewController.xib in Resources */,
 				1750BCE22230DA44006C07A3 /* video_chat_tip_onTimer.aac in Resources */,
+				175027312231087600B0EDFD /* TKMineInfoTableViewController.xib in Resources */,
 				1750BCD72230DA44006C07A3 /* d3.icns in Resources */,
 				1750BB5E2230C415006C07A3 /* NTESVideoViewController.xib in Resources */,
 				1750BAF82230C415006C07A3 /* NTESContactViewController.xib in Resources */,
 				1750BC932230CECA006C07A3 /* TKChatMessageCell.xib in Resources */,
 				17E70FB5222397590059F09A /* TKFindSetPassWordViewController.xib in Resources */,
+				175027282231024400B0EDFD /* TKPersonDataViewController.xib in Resources */,
 				1750BB732230C415006C07A3 /* NTESAudio2TextViewController.xib in Resources */,
 				1750E71F21E5DDEF000601ED /* MainSlideViewController.xib in Resources */,
 				1750BCDA2230DA44006C07A3 /* NIMDemoChartlet.bundle in Resources */,
@@ -3867,6 +3986,8 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-tokeys-iOS/Pods-tokeys-iOS-resources.sh",
+				"${PODS_ROOT}/FSActionSheet/FSActionSheet/FSActionSheet/FSActionSheetResources/FSActionSheet_cancel@2x.png",
+				"${PODS_ROOT}/FSActionSheet/FSActionSheet/FSActionSheet/FSActionSheetResources/FSActionSheet_cancel@3x.png",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/NIMSDK/NIMAVChat/Resources/NMCVideoFilter.bundle",
@@ -3877,6 +3998,8 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FSActionSheet_cancel@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FSActionSheet_cancel@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NMCVideoFilter.bundle",
@@ -3982,6 +4105,7 @@
 				1750BB0E2230C415006C07A3 /* NTESCustomNotificationObject.m in Sources */,
 				1750BC6E2230C786006C07A3 /* NTESDemoService.m in Sources */,
 				1750BB312230C415006C07A3 /* NTESUserInfoSettingViewController.m in Sources */,
+				175027302231087600B0EDFD /* TKMineInfoTableViewController.m in Sources */,
 				1750BB872230C415006C07A3 /* common.c in Sources */,
 				1750BB962230C415006C07A3 /* NTESTeamMeetingViewController.m in Sources */,
 				1750B71F2230BFCE006C07A3 /* NIMKitSetting.m in Sources */,
@@ -4087,6 +4211,7 @@
 				1750BB102230C415006C07A3 /* NTESSystemNotificationCell.m in Sources */,
 				1750B6C52230BFCE006C07A3 /* NIMInputAtCache.m in Sources */,
 				1750BC962230D057006C07A3 /* UIImageView+TKImageView.m in Sources */,
+				1750272B223102C800B0EDFD /* TKMessageAlert.m in Sources */,
 				1750B6FE2230BFCE006C07A3 /* NIMKitAudioCenter.m in Sources */,
 				1750B7142230BFCE006C07A3 /* NIMLocationViewController.m in Sources */,
 				1750BB172230C415006C07A3 /* NTESLiveViewController.m in Sources */,
@@ -4096,15 +4221,18 @@
 				1750BB5F2230C415006C07A3 /* NTESVideoViewController.m in Sources */,
 				1750AF60222FFFE3006C07A3 /* TKRecentChatItemCell.m in Sources */,
 				1750E73021E6046F000601ED /* TKCore.m in Sources */,
+				175027532231141900B0EDFD /* AuthenticationDoctorViewController.m in Sources */,
 				1750B6E22230BFCE006C07A3 /* NIMTeamAnnouncementListCell.m in Sources */,
 				1750B6C12230BFCE006C07A3 /* NIMInputMoreContainerView.m in Sources */,
 				1750B7072230BFCE006C07A3 /* NIMLoadMoreView.m in Sources */,
 				1750B6CC2230BFCE006C07A3 /* NIMMemberGroupView.m in Sources */,
 				17205529221D4A200087FCCB /* UIButton+TouchAreaInsets.m in Sources */,
 				1750B6FB2230BFCE006C07A3 /* NIMSessionDataSourceImpl.m in Sources */,
+				175027222231012F00B0EDFD /* TKSystemNotiViewController.m in Sources */,
 				1750B7182230BFCE006C07A3 /* NSString+NIMKit.m in Sources */,
 				1750BB2A2230C415006C07A3 /* NTESClientsTableViewController.m in Sources */,
 				1758D7BB221D578C00D1F623 /* TKUserFindPassVerifyPhoneViewController.m in Sources */,
+				175027552231141900B0EDFD /* AuthenticationSurgeonViewController.m in Sources */,
 				1758D7AA221D537100D1F623 /* TKUserInfoNewModel.m in Sources */,
 				1750BC162230C70A006C07A3 /* NTESNavigationHandler.m in Sources */,
 				1750BB6A2230C415006C07A3 /* NTESSessionLocalHistoryViewController.m in Sources */,
@@ -4183,6 +4311,7 @@
 				1750B6D52230BFCE006C07A3 /* NIMTeamMemberCardViewController.m in Sources */,
 				17523E3521D1FBF80066C82A /* TokeyViewTools.m in Sources */,
 				1750AF6F22300769006C07A3 /* TKChatInfoViewController.m in Sources */,
+				1750273B22310C6E00B0EDFD /* TKMineCell.m in Sources */,
 				1750B6FC2230BFCE006C07A3 /* NIMSessionTableAdapter.m in Sources */,
 				1750BB202230C415006C07A3 /* NTESChatroomMemberCell.m in Sources */,
 				1750BAF12230C415006C07A3 /* NTESContactDataMember.m in Sources */,
@@ -4238,6 +4367,7 @@
 				1750BC892230CDD8006C07A3 /* LoadMoreView.m in Sources */,
 				1750BAF22230C415006C07A3 /* NTESGroupedDataCollection.m in Sources */,
 				1750B6C02230BFCE006C07A3 /* NIMInputAudioRecordIndicatorView.m in Sources */,
+				1750274022310CFE00B0EDFD /* TKNotiSetTableViewCell.m in Sources */,
 				1750BB812230C415006C07A3 /* NTESTeamMeetingCollectionViewCell.m in Sources */,
 				1750B6E02230BFCE006C07A3 /* NIMTimePickerView.m in Sources */,
 				1750BB7E2230C415006C07A3 /* NTESTeamMeetingCalleeInfo.m in Sources */,
@@ -4259,6 +4389,7 @@
 				1750BBE72230C61E006C07A3 /* NTESClientUtil.m in Sources */,
 				1750BB922230C415006C07A3 /* color.c in Sources */,
 				1750BB8F2230C415006C07A3 /* yuv420p.fsh.c in Sources */,
+				1750274B223113C300B0EDFD /* AuthenticationViewController.m in Sources */,
 				1750BB3D2230C415006C07A3 /* NTESSettingPortraitCell.m in Sources */,
 				1750BB2B2230C415006C07A3 /* NTESAliasSettingViewController.m in Sources */,
 				1750BC192230C70A006C07A3 /* NTESPageView.m in Sources */,
@@ -4299,6 +4430,7 @@
 				1750BC132230C70A006C07A3 /* UINavigationController+Swizzling.m in Sources */,
 				1750B6D02230BFCE006C07A3 /* NIMPageView.m in Sources */,
 				1750B6D42230BFCE006C07A3 /* NIMLoadProgressView.m in Sources */,
+				175027462231108A00B0EDFD /* TKRegistViewController.m in Sources */,
 				1750BB822230C415006C07A3 /* NTESRecordSelectView.m in Sources */,
 				1750B71E2230BFCE006C07A3 /* NIMKitDataProviderImpl.m in Sources */,
 				1750B6E42230BFCE006C07A3 /* NIMTeamCardHeaderCell.m in Sources */,
@@ -4313,6 +4445,7 @@
 				1750BB322230C415006C07A3 /* NTESSignSettingViewController.m in Sources */,
 				1750BB702230C415006C07A3 /* NTESMigrateMessageViewController.m in Sources */,
 				1750B7152230BFCE006C07A3 /* NIMSessionViewController.m in Sources */,
+				175027362231092900B0EDFD /* TKGroupHeadTableViewCell.m in Sources */,
 				1750BC6F2230C786006C07A3 /* NTESDemoRegisterTask.m in Sources */,
 				1750BB8B2230C415006C07A3 /* renderer_yuv420sp.c in Sources */,
 				1750B7122230BFCE006C07A3 /* NIMSessionRobotContentView.m in Sources */,
@@ -4328,6 +4461,7 @@
 				1750BBF32230C61E006C07A3 /* NTESSpellingCenter.m in Sources */,
 				1750E71E21E5DDEF000601ED /* MainSlideViewController.m in Sources */,
 				1750BBC42230C5D8006C07A3 /* UIImage+NTESColor.m in Sources */,
+				175027272231024400B0EDFD /* TKPersonDataViewController.m in Sources */,
 				1758D794221D4B7500D1F623 /* TKSqliteTools.m in Sources */,
 				1750BB092230C415006C07A3 /* NTESJionTeamViewController.m in Sources */,
 				1750BBB92230C5D8006C07A3 /* UIView+NTES.m in Sources */,
@@ -4532,7 +4666,7 @@
 					"$(PROJECT_DIR)/NIMKit/UI/Vendors/WXChatSDK/WXSDK",
 					"$(PROJECT_DIR)/NIMKit/UI/Vendors/WXChatSDK/SPaySDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.xllyll.tokeys-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokeys.ios.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -4563,7 +4697,7 @@
 					"$(PROJECT_DIR)/NIMKit/UI/Vendors/WXChatSDK/WXSDK",
 					"$(PROJECT_DIR)/NIMKit/UI/Vendors/WXChatSDK/SPaySDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.xllyll.tokeys-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokeys.ios.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
