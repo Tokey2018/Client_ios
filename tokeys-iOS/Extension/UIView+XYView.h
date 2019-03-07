@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "UIImageView+TKImageView.h"
 
 @interface UIView (XYView)
 

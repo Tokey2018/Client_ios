@@ -29,6 +29,7 @@
 #define UITabBar_Height  ((screen_height == 812) ? 83.0 : 44.0)
 
 #define blcolor rgb(215,51,10)
+#define backcolor [UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1]
 
 #define TK_ImgBArray @[@"pic1",@"pic2",@"pic4",@"pic5",@"pic6",@"pic7",@"pic8",@"pic9",@"pic10"]
 #define TK_ImgColor TK_ImgBArray[arc4random()%9]

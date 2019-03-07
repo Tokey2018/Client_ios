@@ -31,8 +31,17 @@ target 'tokeys-iOS' do
   pod 'MMDrawerController', '~> 0.5.7'
   pod 'TouchAreaInsets'
   pod 'Reachability'
+  
+  pod 'Toast', '~> 3.0'
+  pod 'M80AttributedLabel', '~> 1.6.3'
+  pod 'CocoaLumberjack', '~> 3.2.1'
+  pod 'SSZipArchive', '~> 1.8.1'
+  pod 'Fabric'
+  pod 'Crashlytics'
   #融云IM
   pod 'NIMSDK'
+  
+  
   
   target 'tokeys-iOSTests' do
     inherit! :search_paths

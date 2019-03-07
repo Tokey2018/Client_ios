@@ -14,11 +14,21 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - CocoaLumberjack (3.2.1):
+    - CocoaLumberjack/Default (= 3.2.1)
+    - CocoaLumberjack/Extensions (= 3.2.1)
+  - CocoaLumberjack/Default (3.2.1)
+  - CocoaLumberjack/Extensions (3.2.1):
+    - CocoaLumberjack/Default
+  - Crashlytics (3.12.0):
+    - Fabric (~> 1.9.0)
+  - Fabric (1.9.0)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
   - IQKeyboardManager (6.2.0)
   - LYEmptyView (1.2.3)
+  - M80AttributedLabel (1.6.3)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - MFCategory (0.2.1)
@@ -44,12 +54,14 @@ PODS:
   - Reachability (3.2)
   - SDCycleScrollView (1.75):
     - SDWebImage (>= 4.0.0)
-  - SDWebImage (4.4.5):
-    - SDWebImage/Core (= 4.4.5)
-  - SDWebImage/Core (4.4.5)
+  - SDWebImage (4.4.6):
+    - SDWebImage/Core (= 4.4.6)
+  - SDWebImage/Core (4.4.6)
+  - SSZipArchive (1.8.1)
   - SVProgressHUD (2.2.5)
+  - Toast (3.1.0)
   - TouchAreaInsets (1.1.0)
-  - TZImagePickerController (3.1.9)
+  - TZImagePickerController (3.2.0)
   - "UITableView+FDTemplateLayoutCell (1.6)"
   - WMPageController (2.4.3)
   - WRNavigationBar (1.2.0)
@@ -66,9 +78,13 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - CocoaLumberjack (~> 3.2.1)
+  - Crashlytics
+  - Fabric
   - FMDB
   - IQKeyboardManager
   - LYEmptyView
+  - M80AttributedLabel (~> 1.6.3)
   - Masonry
   - MBProgressHUD
   - MFPictureBrowser
@@ -79,7 +95,9 @@ DEPENDENCIES:
   - Reachability
   - SDCycleScrollView (~> 1.75)
   - SDWebImage
+  - SSZipArchive (~> 1.8.1)
   - SVProgressHUD
+  - Toast (~> 3.0)
   - TouchAreaInsets
   - TZImagePickerController
   - "UITableView+FDTemplateLayoutCell"
@@ -90,9 +108,13 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - CocoaLumberjack
+    - Crashlytics
+    - Fabric
     - FMDB
     - IQKeyboardManager
     - LYEmptyView
+    - M80AttributedLabel
     - Masonry
     - MBProgressHUD
     - MFCategory
@@ -104,7 +126,9 @@ SPEC REPOS:
     - Reachability
     - SDCycleScrollView
     - SDWebImage
+    - SSZipArchive
     - SVProgressHUD
+    - Toast
     - TouchAreaInsets
     - TZImagePickerController
     - "UITableView+FDTemplateLayoutCell"
@@ -117,9 +141,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CocoaLumberjack: 2800c03334042fe80589423c8d80e582dcaec482
+  Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
+  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
   LYEmptyView: ea5827f3f81fcbec427f990005501991477bdae8
+  M80AttributedLabel: d06543195d3e451d2ea62ad76d04aa9cea7661d4
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MFCategory: 82ca2cf2d9d05540fc64224a85dcfa9ff31c1d63
@@ -130,10 +158,12 @@ SPEC CHECKSUMS:
   NIMSDK: d007a6ea3497867733bb05e21fa059e6960f24bb
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
-  SDWebImage: ecc03494e973b93b80213649d32175f8d2d17d4d
+  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+  SSZipArchive: 04547dfa448be5ed7ecbaf7eaf8a6e9eb9b42997
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
   TouchAreaInsets: eb1ad705965a142a30a9c6a3405bec5e46d8613b
-  TZImagePickerController: c3f7c505d23281e21e98df6dbeae372946caa28f
+  TZImagePickerController: 7850b158d025065b162a1a963d445040b828abc9
   "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
   WMPageController: 4c7f2c636675a71aea5eecf8fdc07a0ce86954e3
   WRNavigationBar: dc952230effbb646785f962587caaac06c60f229
@@ -142,6 +172,6 @@ SPEC CHECKSUMS:
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: 606a3f8af1d344a5d69240160825609a820a751a
+PODFILE CHECKSUM: 07d4463f57a69f63de7e81930f2d0db3d48dfacf
 
 COCOAPODS: 1.6.0.beta.1

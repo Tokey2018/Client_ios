@@ -11,6 +11,7 @@
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
 
 #import "TKCore.h"
 #import "TKDataCore.h"
@@ -19,4 +20,23 @@
 //聊天
 #import <NIMSDK/NIMSDK.h>
 #import <NIMAVChat/NIMAVChat.h>
+#import "NTESGlobalMacro.h"
+#import "NIMKit.h"
+
+
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+#ifdef DEBUG
+static DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static DDLogLevel ddLogLevel = DDLogLevelInfo;
+#endif
+#endif
+
+
+#define NTES_USE_CLEAR_BAR - (BOOL)useClearBar{return YES;}
+
+#define NTES_FORBID_INTERACTIVE_POP - (BOOL)forbidInteractivePop{return YES;}
+
+
 #endif /* tokeys_pch */
