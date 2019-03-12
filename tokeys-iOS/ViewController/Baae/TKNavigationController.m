@@ -25,7 +25,7 @@
 {
     if (self.viewControllers.count > 0){
         
-        UIBarButtonItem *backItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"nav_btn_back_icon.png"] landscapeImagePhone:[UIImage imageNamed:@"nav_btn_back_icon.png"] style:UIBarButtonItemStylePlain target:self action:@selector(back)];
+        UIBarButtonItem *backItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"nav_btn_back_icon"] landscapeImagePhone:[UIImage imageNamed:@"nav_btn_back_icon"] style:UIBarButtonItemStylePlain target:self action:@selector(back)];
         
         
         viewController.hidesBottomBarWhenPushed = YES;

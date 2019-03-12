@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="docHeadCell" rowHeight="80" id="KGk-i7-Jjw" customClass="TKDocHeaderTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User" translatesAutoresizingMaskIntoConstraints="NO" id="5Jj-gC-4OR">
+                        <rect key="frame" x="16" y="13" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="DkI-fm-ooR"/>
+                            <constraint firstAttribute="width" constant="60" id="uAb-kd-AUK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="程医生" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofD-7w-ObY">
+                        <rect key="frame" x="84" y="13" width="210" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Ghm-gG-SjD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="执业编号:1324343255" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1M-GM-IIB">
+                        <rect key="frame" x="84" y="47" width="220" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Rp0-MB-tBW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ofD-7w-ObY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="9oU-lI-Fb5"/>
+                    <constraint firstItem="m1M-GM-IIB" firstAttribute="top" secondItem="ofD-7w-ObY" secondAttribute="bottom" constant="13" id="Vph-gP-Qul"/>
+                    <constraint firstItem="ofD-7w-ObY" firstAttribute="leading" secondItem="5Jj-gC-4OR" secondAttribute="trailing" constant="8" id="eaB-eN-gGH"/>
+                    <constraint firstItem="m1M-GM-IIB" firstAttribute="leading" secondItem="5Jj-gC-4OR" secondAttribute="trailing" constant="8" id="hD3-Wh-Edd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ofD-7w-ObY" secondAttribute="trailing" constant="10" id="jZA-5P-OZl"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="m1M-GM-IIB" secondAttribute="trailing" id="qBu-uy-bz0"/>
+                    <constraint firstItem="5Jj-gC-4OR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="xhi-Qc-70N"/>
+                    <constraint firstItem="5Jj-gC-4OR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="zr6-Kr-GSt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="code" destination="m1M-GM-IIB" id="4Gr-5n-D3x"/>
+                <outlet property="docName" destination="ofD-7w-ObY" id="u0w-QU-l64"/>
+                <outlet property="headImage" destination="5Jj-gC-4OR" id="CKY-bA-tDk"/>
+            </connections>
+            <point key="canvasLocation" x="362" y="285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="User" width="68" height="68"/>
+    </resources>
+</document>

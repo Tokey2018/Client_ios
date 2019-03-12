@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "UIImage+TKImage.h"
 
 @interface UIImageView (TKImageView)
 

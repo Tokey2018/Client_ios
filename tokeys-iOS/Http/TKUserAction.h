@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "TKDoLoginModel.h"
+#import "TKXGModel.h"
+#import "TKHttpAction.h"
 
 @interface TKUserAction : NSObject
 
@@ -38,5 +40,11 @@
                   password:(NSString*)password
                confirmPass:(NSString*)confirmPass
                    respose:(void(^)(BOOL aSuccess,NSString*aMessage))callblock;
+
+
++(void)userInfo:(NSString*)ownAccid
+       otherUid:(NSString*)otherUid
+        respose:(void(^)(TKXGModel*xgModel,NSString*aMessage))callblock;
+
 @end
 

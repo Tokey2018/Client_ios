@@ -13,6 +13,8 @@
 #import "TKContactsAction.h"
 #import "TKChatTableViewCell.h"
 #import "TKChatInfoViewController.h"
+#import "TKGroupCreateViewController.h"
+#import "TKSelectFriendViewController.h"
 
 @interface TKContactsViewController ()<UITableViewDataSource,UITableViewDelegate,NIMLoginManagerDelegate,
 NIMUserManagerDelegate,UIAlertViewDelegate,TKChatTableViewCellDelegate>
@@ -422,15 +424,15 @@ NIMUserManagerDelegate,UIAlertViewDelegate,TKChatTableViewCellDelegate>
     [self setBackNav];
     //NSLog(@"%@",selfmodel.aid);
     if(indexPath.section==0){
-        if(indexPath.row==0){//---------------邀请好友
-//            selectFriViewController * fri = [[selectFriViewController alloc]init];
-//            [self.navigationController pushViewController:fri animated:YES];
-        }else if(indexPath.row==1){//--------------新建群组-------------
-            
-            
-//            qunmingViewController * invite = [[qunmingViewController alloc]init];
-//            invite.arr = self.friArr;
-//            [self.navigationController pushViewController:invite animated:YES];
+        if(indexPath.row==0){
+            //---------------邀请好友
+            TKSelectFriendViewController * fri = [[TKSelectFriendViewController alloc]init];
+            [self.navigationController pushViewController:fri animated:YES];
+        }else if(indexPath.row==1){
+            //--------------新建群组-------------
+            TKGroupCreateViewController * invite = [[TKGroupCreateViewController alloc]init];
+            invite.arr = self.friArr;
+            [self.navigationController pushViewController:invite animated:YES];
         }
         
     }else if(indexPath.section==1){

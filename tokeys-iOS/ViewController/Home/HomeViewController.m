@@ -14,6 +14,12 @@
 #import <AVFoundation/AVFoundation.h>
 #import "TKChatListViewController.h"
 #import "TKContactsViewController.h"
+#import "XYPopView.h"
+#import "XYCameraMainViewController.h"
+#import "UIView+Toast.h"
+#import "TKGroupCreateViewController.h"
+#import "TKAddFriendViewController.h"
+#import "TKSearchViewController.h"
 
 @interface HomeViewController ()<UIImagePickerControllerDelegate,WMPageControllerDelegate,WMPageControllerDataSource,UITableViewDelegate,UITableViewDataSource>{
     
@@ -24,6 +30,8 @@
     CGFloat sectionHeaderHeight;    //section的header高度
     
 }
+@property (nonatomic, strong) XYPopView *popView;
+
 @property(nonatomic ,strong) TKChatListViewController *chatListViewController;
 @property(nonatomic ,strong) TKContactsViewController *contactsViewController;
 
@@ -112,14 +120,14 @@
 //录制视频
 -(void)cameraClick:(UIButton *)btn{
     [self setBackNav];
-//    NSString *mediaType = AVMediaTypeVideo;
-//    AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:mediaType];
-//    if(authStatus == AVAuthorizationStatusRestricted || authStatus == AVAuthorizationStatusDenied){
-//        [self.view makeToast:@"没有相机权限,请在手机设置中打开" duration:1 position:CSToastPositionCenter];
-//        return;
-//    }
-//    XYCameraMainViewController * camrra = [[XYCameraMainViewController alloc]init];
-//    [self.navigationController pushViewController:camrra animated:YES];
+    NSString *mediaType = AVMediaTypeVideo;
+    AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:mediaType];
+    if(authStatus == AVAuthorizationStatusRestricted || authStatus == AVAuthorizationStatusDenied){
+        [self.view makeToast:@"没有相机权限,请在手机设置中打开" duration:1 position:CSToastPositionCenter];
+        return;
+    }
+    XYCameraMainViewController * camrra = [[XYCameraMainViewController alloc]init];
+    [self.navigationController pushViewController:camrra animated:YES];
     
 }
 
@@ -206,36 +214,36 @@
     }
 }
 -(void)showMenu{
-//    if (self.popView==nil) {
-//        //@{@"title":@"添加好友" , @"iconName":@"tjhy_icon"
-//        NSArray *dictArr = @[@{@"title":@"创建群聊", @"iconName":@"cjql_icon"}];
-//
-//        self.popView = [XYPopView popViewWithFuncDicts:dictArr];
-//        self.popView.x = self.view.width-20-150;
-//        __weak typeof (self) weakSelf = self;
-//
-//        self.popView.menuSelectBlock = ^(NSInteger index){
-//
-//            XYLog(@"<----------------------------->%ld", index);
-//            [weakSelf.popView dismissFromKeyWindow];
-//            if (index == 0) {
-//                qunmingViewController * invite = [[qunmingViewController alloc]init];
-//                invite.arr = [[XYDataCore sharedDataCore] getUserAllFriend];
-//                [weakSelf.navigationController pushViewController:invite animated:YES];
-//            }
-//            if (index == 1) {
-//                addFriViewController *addvc = [[addFriViewController alloc] init];
-//                [weakSelf.navigationController pushViewController:addvc animated:YES];
-//            }
-//
-//
-//        };
-//    }
-//    self.popView.x = self.view.width-20-150;
-//    if (self.popView.isShow) {
-//        return;
-//    }
-//    [self.popView showInView:self.view];
+    if (self.popView==nil) {
+        //@{@"title":@"添加好友" , @"iconName":@"tjhy_icon"
+        NSArray *dictArr = @[@{@"title":@"创建群聊", @"iconName":@"cjql_icon"}];
+
+        self.popView = [XYPopView popViewWithFuncDicts:dictArr];
+        self.popView.x = self.view.width-20-150;
+        __weak typeof (self) weakSelf = self;
+
+        self.popView.menuSelectBlock = ^(NSInteger index){
+
+            XYLog(@"<----------------------------->%ld", index);
+            [weakSelf.popView dismissFromKeyWindow];
+            if (index == 0) {
+                TKGroupCreateViewController * invite = [[TKGroupCreateViewController alloc]init];
+                invite.arr = [[TKDataCore sharedCore] getUserAllFriend];
+                [weakSelf.navigationController pushViewController:invite animated:YES];
+            }
+            if (index == 1) {
+                TKAddFriendViewController *addvc = [[TKAddFriendViewController alloc] init];
+                [weakSelf.navigationController pushViewController:addvc animated:YES];
+            }
+
+
+        };
+    }
+    self.popView.x = self.view.width-20-150;
+    if (self.popView.isShow) {
+        return;
+    }
+    [self.popView showInView:self.view];
 }
 #pragma mark --tableDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -368,8 +376,8 @@
     //    */
     //    [self showMenu];
     
-//    SearchViewController * sear = [[SearchViewController alloc]init];
-//    [self.navigationController pushViewController:sear animated:YES];
+    TKSearchViewController * sear = [[TKSearchViewController alloc]init];
+    [self.navigationController pushViewController:sear animated:YES];
 }
 -(void)moreBtnCheck{
     [self setBackNav];

@@ -80,4 +80,27 @@
     }];
 }
 
+
++ (void)userInfo:(NSString *)ownAccid otherUid:(NSString *)otherUid respose:(void (^)(TKXGModel *, NSString *))callblock{
+    NSMutableDictionary * dict = [NSMutableDictionary dictionary];
+    [dict setObject:ownAccid forKey:@"ownAccid"];
+    [dict setObject:otherUid forKey:@"otherUid"];
+   
+    TKHttpAction *action = [[TKHttpAction alloc] init];
+    NSString *url = [action getURL:@"/imperson/userInfo"];
+    [action tokeys_request:url method:TKHttpMethodPOST params:dict showHUD:YES resposeBlock:^(TKHttpResposeModel *response, NSString *aMessage) {
+        if (response!=nil) {
+            if (response.code==0) {
+                TKXGModel *model = [[TKXGModel alloc] initWithDictionary:response.data];
+                callblock(model,response.msg);
+                
+            }else{
+                callblock(nil,response.msg);
+            }
+        }else{
+            callblock(nil,aMessage);
+        }
+    }];
+}
+
 @end

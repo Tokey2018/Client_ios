@@ -43,14 +43,14 @@
     UILabel * nameLabel = [TokeyViewTools createLabelWithFrame:CGRectMake(W_In_375(10)+CGRectGetMaxX(headImg.frame), W_In_375(85), W_In_375(200), W_In_375(30)) andTitle:@"用户名称" andTitleFont:FontSize(W_In_375(18)) andTitleColor:[UIColor blackColor] andTextAlignment:NSTextAlignmentLeft andBgColor:nil];
     [self.view addSubview:nameLabel];
     _userNameLabel = nameLabel;
-    //_userNameLabel.text = [LJUserSetting sharedManager].nick;
+    _userNameLabel.text = [TKUserSetting sharedManager].nick;
     
     
     UILabel * phoneLabel = [TokeyViewTools createLabelWithFrame:CGRectMake(W_In_375(10)+CGRectGetMaxX(headImg.frame), CGRectGetMaxY(nameLabel.frame), W_In_375(160), W_In_375(20)) andTitle:@"135 XXXX XXXX" andTitleFont:FontSize(W_In_375(14)) andTitleColor:RGB102 andTextAlignment:NSTextAlignmentLeft andBgColor:nil];
     [self.view addSubview:phoneLabel];
     _userPhoneLabel = phoneLabel;
     
-    NSString *tenDigitNumber = @"13218991231";//[LJUserSetting sharedManager].phone;
+    NSString *tenDigitNumber = [TKUserSetting sharedManager].phone;
     tenDigitNumber = [tenDigitNumber stringByReplacingOccurrencesOfString:@"(\\d{3})(\\d{4})(\\d{4})"
                                                                withString:@"$1 $2 $3"
                                                                   options:NSRegularExpressionSearch

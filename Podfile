@@ -26,6 +26,7 @@ target 'tokeys-iOS' do
   
   pod 'SDWebImage'
   
+  pod 'ZZCircleProgress'
   pod 'FSActionSheet'
   pod 'TZImagePickerController'
   pod 'YNPageViewController'

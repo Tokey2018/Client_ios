@@ -22,6 +22,7 @@
 #import "TKUserSetting.h"
 #import "TKSystemNotiViewController.h"
 #import "TKMessageAlert.h"
+#import "TKSelectFriendViewController.h"
 
 @interface TKChatListViewController ()<UITableViewDataSource,UITableViewDelegate,NIMConversationManagerDelegate,NIMTeamManagerDelegate,NIMUserManagerDelegate,NIMNetCallManagerDelegate,NIMRTSManagerDelegate,NIMSystemNotificationManagerDelegate,NIMChatManagerDelegate,UIAlertViewDelegate>
 
@@ -430,8 +431,8 @@
     [self setBackNav];
     if(indexPath.row==0&&indexPath.section==0){
         //----------邀请好友-------------
-//        selectFriViewController * fri = [[selectFriViewController alloc]init];
-//        [self.navigationController pushViewController:fri animated:YES];
+        TKSelectFriendViewController * fri = [[TKSelectFriendViewController alloc]init];
+        [self.navigationController pushViewController:fri animated:YES];
     }else if(indexPath.row==1&&indexPath.section==0){
         //----------医仙小助手-------------
 //        AssistantViewController *assVC = [[AssistantViewController alloc] init];

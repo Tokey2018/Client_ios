@@ -550,7 +550,7 @@
         //群成员
         UIButton * chengyuanbutton = [UIButton buttonWithType:UIButtonTypeCustom];
         chengyuanbutton.frame = CGRectMake(screen_width-45, 30, 28, 28);
-        [chengyuanbutton setImage:[UIImage imageNamed:@"群-详情"] forState:UIControlStateNormal];
+        [chengyuanbutton setImage:[UIImage imageNamed:@"team_info_icon"] forState:UIControlStateNormal];
         [chengyuanbutton addTarget:self action:@selector(group_chengyuan) forControlEvents:UIControlEventTouchUpInside];
         UIBarButtonItem * rightOne = [[UIBarButtonItem alloc]initWithCustomView:chengyuanbutton];
         self.navigationItem.rightBarButtonItem = rightOne;

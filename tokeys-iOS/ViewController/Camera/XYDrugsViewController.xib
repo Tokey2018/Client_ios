@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XYDrugsViewController">
+            <connections>
+                <outlet property="bgImageView" destination="YGn-0W-Tcw" id="jbs-jr-lmM"/>
+                <outlet property="bgLabel" destination="aOY-nj-AXP" id="cJw-mh-8em"/>
+                <outlet property="shopButton" destination="hjF-WL-sZp" id="LPy-sK-X0E"/>
+                <outlet property="tableView" destination="HA8-ku-c75" id="oWp-Qj-NOH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HA8-ku-c75">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <imageView alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YGn-0W-Tcw">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请放心我们和您一样，痛恨假药" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOY-nj-AXP">
+                    <rect key="frame" x="60" y="231.5" width="200" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjF-WL-sZp">
+                    <rect key="frame" x="130" y="380" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="JC7-ip-eVM"/>
+                        <constraint firstAttribute="height" constant="60" id="Pzc-Gy-DaQ"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="shop_icon"/>
+                    <connections>
+                        <action selector="shopButtonSelect:" destination="-1" eventType="touchUpInside" id="sr4-hY-1On"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.85490196080000003" green="0.85490196080000003" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="YGn-0W-Tcw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1Ni-wi-sJr"/>
+                <constraint firstAttribute="bottom" secondItem="HA8-ku-c75" secondAttribute="bottom" id="8Zv-ol-ibe"/>
+                <constraint firstItem="HA8-ku-c75" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8ey-0e-sBr"/>
+                <constraint firstItem="YGn-0W-Tcw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9xS-7I-WRy"/>
+                <constraint firstAttribute="trailing" secondItem="HA8-ku-c75" secondAttribute="trailing" id="IZK-py-12E"/>
+                <constraint firstAttribute="bottom" secondItem="YGn-0W-Tcw" secondAttribute="bottom" id="L2Y-GN-Qd1"/>
+                <constraint firstItem="aOY-nj-AXP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dtZ-re-nEC"/>
+                <constraint firstItem="hjF-WL-sZp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="elE-pq-yr9"/>
+                <constraint firstAttribute="bottom" secondItem="hjF-WL-sZp" secondAttribute="bottom" constant="40" id="rg9-qJ-Pqq"/>
+                <constraint firstItem="aOY-nj-AXP" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="vxV-a8-vHv"/>
+                <constraint firstItem="HA8-ku-c75" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wka-TM-xol"/>
+                <constraint firstAttribute="trailing" secondItem="YGn-0W-Tcw" secondAttribute="trailing" id="yqi-ya-AFF"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="shop_icon" width="75" height="75"/>
+    </resources>
+</document>

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "TKHttpResposeModel.h"
 
+#define HTTP_URL(_url_) [NSString stringWithFormat:@"http://47.92.154.180:8995%@", _url_]
 
 typedef NS_ENUM (NSInteger, TKHttpMethod)   {
     
